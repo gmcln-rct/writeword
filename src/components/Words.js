@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { useQuery } from 'react-query';
 
 import Word from './Word';
@@ -10,11 +10,12 @@ const fetchWords = async () => {
 }
 
 const Words = () => {
-
+    const [ word, setWord ] = useState("");
     const { data, status } = useQuery('words', fetchWords);
-    window.dataset = data;
     return (
         <>
+
+
             {
                 status === 'loading' && (
                     <div id="status-message">Tauntauns are loading</div>
@@ -30,6 +31,7 @@ const Words = () => {
                 status === 'success' && (
                     <>
                         {data.map(word =>
+
                             <Word
                                 key={word.word}
                                 word={word.word}
