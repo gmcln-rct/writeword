@@ -4,7 +4,7 @@ import { useQuery } from 'react-query';
 import Planet from './Planet';
 
 const fetchWords = async () => {
-    const res = await fetch('http://swapi.dev/api/words/');
+    const res = await fetch('api.datamuse.com/words?ml=cold');
 
     return res.json();
 
