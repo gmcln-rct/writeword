@@ -14,8 +14,7 @@ const Words = () => {
     const { data, status } = useQuery('words', fetchWords);
     window.dataset = data;
     return (
-        <div>
-            <h2>Words</h2>
+        <>
             {
                 status === 'loading' && (
                     <div id="status-message">Tauntauns are loading</div>
@@ -29,7 +28,7 @@ const Words = () => {
 
             {
                 status === 'success' && (
-                    <div id="success-message">
+                    <>
                         {data.map(word =>
                             <Word
                                 key={word.word}
@@ -38,10 +37,10 @@ const Words = () => {
                                 tag={word.tag}
                             />
                         )}
-                    </div>
+                    </>
                 )
             }
-        </div>
+        </>
     );
 }
 

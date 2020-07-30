@@ -24,15 +24,26 @@ code {
     monospace;
 }
 
+.content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 
+  width: 90vw;
+}
 
 .card {
   margin: 1vmin;
   padding: 1vmin 2vmin;
+
+  width: 70px;
   background: rgba(190, 205, 50, 0.8);
   border-radius: 20px;
   border: 1px solid #fff;
 }
+
+
+
 
 h1 {
  
@@ -92,7 +103,4 @@ color: white;
   background: red;
 }
 
-.content {
-  padding: 1vmin;
-}
 
