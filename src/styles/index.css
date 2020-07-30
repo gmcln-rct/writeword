@@ -1,0 +1,96 @@
+html {
+  background-color: #222;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+body  {
+  margin: 2vmin;
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.card {
+  margin: 1vmin;
+  padding: 1vmin 2vmin;
+  background: rgba(190, 205, 50, 0.8);
+  border-radius: 20px;
+  border: 1px solid #fff;
+}
+
+h1 {
+ 
+  margin: 2vmin 0;
+  font-size: calc(24px + (36 - 24) * ((100vw - 300px) / (1800 - 300)));
+  line-height: calc(24px + (36 - 24) * ((100vw - 300px) / (1800 - 300)));
+  font-weight: 700;
+  text-align: center;
+
+  color: rgb(255, 255, 123);
+
+}
+
+h2 {
+  margin: 2vmin;
+
+  font-size: calc(18px + (24 - 18) * ((100vw - 300px) / (1800 - 300)));
+  line-height: calc(24px + (28 - 24) * ((100vw - 300px) / (1800 - 300)));
+  font-weight: 600;
+
+  text-align: center;
+
+  color: #fff;
+
+}
+
+h3 {
+  color: #fff;
+
+  text-align: center;
+}
+
+p { 
+  color: #fff;
+
+  text-align: center;
+}
+
+#status-message {
+  color: lime;
+}
+
+button {
+  margin: 0 2vmin;
+  padding: 1vmin 3vmin;
+
+  font-size: calc(18px + (24 - 18) * ((100vw - 300px) / (1800 - 300)));
+  line-height: calc(24px + (28 - 24) * ((100vw - 300px) / (1800 - 300)));
+  font-weight: 600;
+
+  border-radius: 10px;
+}
+
+button:hover {
+  border-radius: 10px;
+color: white;
+  background: red;
+}
+
+.content {
+  padding: 1vmin;
+}
+
