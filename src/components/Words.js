@@ -1,11 +1,10 @@
 import React from 'react';
 import { useQuery } from 'react-query';
 
-import Planet from './Planet';
+import Word from './Word';
 
 const fetchWords = async () => {
-    const res = await fetch('api.datamuse.com/words?ml=cold');
-
+    const res = await fetch('https://api.datamuse.com/words?ml=cold');
     return res.json();
 
 }
@@ -13,7 +12,7 @@ const fetchWords = async () => {
 const Words = () => {
 
     const { data, status } = useQuery('words', fetchWords);
-    console.log(data);
+    window.dataset = data;
     return (
         <div>
             <h2>Words</h2>
@@ -31,10 +30,12 @@ const Words = () => {
             {
                 status === 'success' && (
                     <div id="success-message">
-                        {data.results.map(planet =>
-                            <Planet
-                                key={planet.name}
-                                planet={planet}
+                        {data.map(word =>
+                            <Word
+                                key={word.word}
+                                word={word.word}
+                                score={word.score}
+                                tag={word.tag}
                             />
                         )}
                     </div>

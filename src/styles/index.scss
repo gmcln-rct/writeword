@@ -1,9 +1,17 @@
 html {
-  background-color: #222;
+  background-size: cover;
+  background: #43C6AC;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #191654, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #191654, #43C6AC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 body {
-  margin: 0;
+    margin: 2vmin;
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -16,13 +24,7 @@ code {
     monospace;
 }
 
-body  {
-  margin: 2vmin;
 
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
 
 .card {
   margin: 1vmin;

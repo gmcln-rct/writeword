@@ -1,14 +1,13 @@
 import React from 'react';
 
 
-const Word = ({ word }) => {
+const Word = ({ word, score, tag }) => {
     return (
-        <div className="card">
-            <h3>{word.name}</h3>
-            <p>Gender = {word.gender}</p>
-            <p>Birth Year = {word.birth_year}</p>
-
-        </div>
+      <div className="card">
+        <h3>{word}</h3>
+        <p>Score = {score}</p>
+        <p>Tag = {tag}</p>
+      </div>
     );
 }
 
