@@ -1,0 +1,24 @@
+  
+import React, { useContext, useState } from 'react';
+import { WordContext } from '../contexts/WordContext';
+
+const NewBookForm = () => {
+  const { dispatch } = useContext(WordContext);
+  const [title, setWord] = useState('');
+  
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setTitle('');
+    setAuthor('');
+  }
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <input type="text" placeholder="Word" value={word}
+        onChange={(e) => setTitle(e.target.value)} required />
+      <input type="submit" value="add book" />
+    </form>
+  );
+}
+ 
+export default NewBookForm;

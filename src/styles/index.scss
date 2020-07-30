@@ -33,13 +33,22 @@ code {
 }
 
 .card {
+  width: 150px;
   margin: 1vmin;
   padding: 1vmin 2vmin;
 
-  width: 70px;
-  background: rgba(190, 205, 50, 0.8);
+  color: #fff;
+  background: rgba(153, 155, 140, 0.8);
   border-radius: 20px;
   border: 1px solid #fff;
+
+  h3 {
+    color: white;
+    font-size: calc(18px + (24 - 18) * ((100vw - 300px) / (1800 - 300)));
+    line-height: calc(24px + (28 - 24) * ((100vw - 300px) / (1800 - 300)));
+
+    font-weight: 600;
+  }
 }
 
 
