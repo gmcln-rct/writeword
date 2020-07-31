@@ -6,28 +6,30 @@ const Word = ({ word, score, tag }) => {
     let percentage = (score/1200).toFixed(2);
     let alpha = ((score/1200)/100).toFixed(2);
     let rgb;
-    let fontcolor = "#fff"
+    let fontcolor = "#000"
 
     switch(true) {
-      case (alpha > .80):
-        rgb = "225,225,225";
-        fontcolor = "#000";
+      case (alpha > .70):
+
+        rgb = "50,50,50";
+        fontcolor = "rgb(255,255,150)";
         break;
-      case (alpha > .60):
+      case (alpha > .50):
         rgb = "125,125,125";
+        fontcolor = "#fff";
         break;
       case (alpha > .40):
-        rgb = "50,50,50";
+        rgb = "200,200,200";
         break;
       default:
-        rgb = "0,0,0";
+        rgb = "255,255,255";
     }
 
 
     return (
       <div className="card" style={{ background: `rgba(${rgb},0.8)`, color: `${fontcolor}` }}>
         <h3>{word}</h3>
-        <p>Relevance = {percentage}%</p>
+        <p>Relevance: {percentage}%</p>
         {/* <p>{percentage}</p> */}
         {/* <p>Tag = {tag}</p> */}
       </div>
