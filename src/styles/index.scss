@@ -54,8 +54,8 @@ nav {
   font-weight: 700;
   text-align: center;
   
-  color: rgb(255, 255, 123);
-  background: red;
+  color: #fff;
+  background: #403D6E;
   background-size: cover;
 }
 
@@ -96,13 +96,13 @@ form {
       font-weight: 600;
       border: 1px solid white;
       border-radius: 5px;
-      color: #fff;
-      background: #43C6AC;
+      color: #18473E;
+      background: #85D0C1;
 
       &:hover {
-        color: #43C6AC;
+        color: #fff;
         background: rgb(200,200,200);
-        border-color: #43C6AC;
+        border-color: #18473E;
         transition: 0.4s;
       }
   }
