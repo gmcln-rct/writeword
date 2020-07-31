@@ -6,14 +6,14 @@ const InputForm = () => {
   const {setSearchWord, setSearchType} = useContext(WordContext);  
 
   const [word, setWord] = useState('');
-  const [searchType] = useState('');
+  const [searchType, setSearch] = useState('');
   
   const handleSubmit = (e) => {
     e.preventDefault();
     setSearchWord(word);
     setSearchType(searchType);
     setWord('');
-    setSearchType('');
+    setSearch('');
   }
 
   function handleChange(e) {
@@ -21,7 +21,7 @@ const InputForm = () => {
     let idx = e.target.selectedIndex;
     searchType = e.target.options[idx].innerText;
     return (
-      <div></div>
+      <div>Just a return value</div>
     )
   };
 
@@ -41,13 +41,10 @@ const InputForm = () => {
         >
           <option value="ml">Synonyms</option>
           <option value="sl">Sounds Like</option>
-          <option value="rel_rhym">Rhymes</option>
+          {/* <option value="rel_rhym">Rhymes</option>
           <option value="sp">Similar Spelling</option>
           <option value="rel_jjb">Related Adjectives</option>
-          <option value="rel_jja">Related Nouns</option>
-
-
-
+          <option value="rel_jja">Related Nouns</option> */}
         </select>
         <input type="submit" value="Find Relate Words" />
       </form>
