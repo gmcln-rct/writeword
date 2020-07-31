@@ -15,7 +15,12 @@ const InputForm = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    
+    <>
+
+        <h2>{word}</h2>
+      <form onSubmit={handleSubmit}>
+
       <input  type="text" 
               placeholder="Enter Word" 
               value={word}
@@ -23,6 +28,8 @@ const InputForm = () => {
               required />
       <input type="submit" value="Check Word" />
     </form>
+      </>
+      
   );
 }
  

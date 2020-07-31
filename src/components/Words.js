@@ -14,11 +14,10 @@ const fetchWords = async (key, searchType, word) => {
 const Words = () => {
 
     const { searchWord } = useContext(WordContext);
-    const [ word, setWord ] = useState("");
+    // const [ word, setWord ] = useState("");
     const { data, status } = useQuery(['words', "ml", searchWord], fetchWords);
     return (
         <>
-
 
             {
                 status === 'loading' && (

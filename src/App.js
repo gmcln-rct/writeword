@@ -12,8 +12,8 @@ function App() {
   
   return (
     <div className="App">
-      <Navbar />
       <WordContextProvider>
+      <Navbar />
       <InputForm />
       <div className="content">
         <Words />

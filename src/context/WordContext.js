@@ -13,10 +13,6 @@ export function WordContextProvider(props) {
     const [searchWord, setSearchWord] = useState(wordContext.searchWord);
     const [searchType, setSearchType] = useState(wordContext.searchType);
 
-    // const enterWord = (title, director, year) => {
-    //     set([...Movies, { title, director, year, id: uuid() }]);
-    // };
-
     const provider = {
 
         searchWord,
