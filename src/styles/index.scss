@@ -37,6 +37,47 @@ nav {
   // background: rgba(50,50,50,0.7);
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  align-items: center;
+
+
+  input[type='text']{
+    width: 100%;
+    padding: 0.3rem;
+    box-sizing: border-box;
+    margin: 6px 0;
+    color: #fff;
+    font-weight: 600;
+    background: rgb(100,100,100);
+    border: 0;
+
+    &::placeholder {
+      color: white;
+      opacity: 0.8;
+    }
+  }
+  input[type='submit']{
+      display: block;
+      margin: 0.3rem auto;
+      padding: 6px 20px;
+
+      font-weight: 600;
+      border: 1px solid white;
+      border-radius: 5px;
+      color: #fff;
+      background: aqua;
+
+      &:hover {
+        color: aqua;
+        background: rgb(200,200,200);
+        border-color: aqua;
+        transition: 0.4s;
+      }
+  }
+}
 .content {
   display: flex;
   justify-content: center;

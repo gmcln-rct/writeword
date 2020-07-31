@@ -9,7 +9,6 @@ import { WordContextProvider } from './context/WordContext';
 
 function App() {
 
-  
   return (
     <div className="App">
       <WordContextProvider>
