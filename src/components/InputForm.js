@@ -7,11 +7,14 @@ const InputForm = () => {
 
   const [word, setWord] = useState('');
   const [searchType, setSearch] = useState('');
+
+  let searchWordDisplay = "";
   
   const handleSubmit = (e) => {
     e.preventDefault();
     setSearchWord(word);
     setSearchType(searchType);
+    // searchWordDisplay = word;
     setWord('');
     setSearch('');
   }
@@ -26,13 +29,17 @@ const InputForm = () => {
   };
 
   return (
+
+
     <>
       <form onSubmit={handleSubmit}>
-        <input  type="text" 
-                placeholder="Enter Word" 
-                value={word}
-                onChange={(e) => setWord(e.target.value)} 
-                required />
+        <input
+          type="text"
+          placeholder="Enter Word"
+          value={word}
+          onChange={(e) => setWord(e.target.value)}
+          required
+        />
 
         {/* <select
           className="select-css"
@@ -49,10 +56,12 @@ const InputForm = () => {
         <input type="submit" value="Find Related Words" />
       </form>
       <h2 id="search-word">
-        Current search term: <span id="yellow-text">{word === '' ? "nothing" : word}</span> 
+        Current search term:{" "}
+        <span id="yellow-text">
+          {word === "" ? "nothing" : word}
+        </span>
       </h2>
-      </>
-      
+    </>
   );
 }
  

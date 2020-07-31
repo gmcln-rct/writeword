@@ -29,7 +29,7 @@ body {
 
   background: #43C6AC;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to bottom, #191654, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #191654, #43C6AC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to bottom, rgb(26, 22, 85), #43C6AC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: cover;
 }
 
@@ -65,7 +65,7 @@ nav {
   text-align: center;
   
   color: #fff;
-  background: #143961;
+  background: rgb(20, 57, 97);
   background-size: cover;
 }
 
