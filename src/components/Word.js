@@ -18,7 +18,7 @@ const Word = ({ word, score, tag }) => {
         rgb = "125,125,125";
         fontcolor = "#fff";
         break;
-      case (alpha > .40):
+      case (alpha > .30):
         rgb = "200,200,200";
         break;
       default:
@@ -27,7 +27,7 @@ const Word = ({ word, score, tag }) => {
 
 
     return (
-      <div className="card" style={{ background: `rgba(${rgb},0.8)`, color: `${fontcolor}` }}>
+      <div className="card" style={{ background: `rgba(${rgb},0.7)`, color: `${fontcolor}` }}>
         <h3>{word}</h3>
         <p>Relevance: {percentage}%</p>
         {/* <p>{percentage}</p> */}
