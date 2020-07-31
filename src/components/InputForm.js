@@ -34,18 +34,18 @@ const InputForm = () => {
                 onChange={(e) => setWord(e.target.value)} 
                 required />
 
-        <select
+        {/* <select
           className="select-css"
           value={searchType}
           onChange={handleChange}
         >
           <option value="ml">Synonyms</option>
           <option value="sl">Sounds Like</option>
-          {/* <option value="rel_rhym">Rhymes</option>
+          <option value="rel_rhym">Rhymes</option>
           <option value="sp">Similar Spelling</option>
           <option value="rel_jjb">Related Adjectives</option>
-          <option value="rel_jja">Related Nouns</option> */}
-        </select>
+          <option value="rel_jja">Related Nouns</option>
+        </select> */}
         <input type="submit" value="Find Relate Words" />
       </form>
       <h2 id="search-word">

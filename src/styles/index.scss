@@ -1,3 +1,10 @@
+// Fonts
+
+  @import url("https://use.typekit.net/glp0pxk.css");
+  @import url("https://use.typekit.net/glp0pxk.css");
+
+
+
 html {
 
   padding: 0;
@@ -44,13 +51,16 @@ code {
 nav {
   // width: 100vw;
   height: 50px;
-  padding: 2vmin 0 0 0;
-  margin: 0 0 1vmin 0;
+  // margin: 1vmin 0;
+  padding: 2vmin 0;
   // background-size: cover;
   // background: rgba(50,50,50,0.7);
-  
-  font-size: calc(24px + (36 - 24) * ((100vw - 300px) / (1800 - 300)));
-  line-height: calc(24px + (36 - 24) * ((100vw - 300px) / (1800 - 300)));
+  // font-family: goodlife-script, sans-serif;
+
+  font-family: pauline, sans-serif;
+  font-style: normal;
+  font-size: calc(28px + (60 - 28) * ((100vw - 300px) / (1800 - 300)));
+  line-height: calc(32px + (64 - 32) * ((100vw - 300px) / (1800 - 300)));
   font-weight: 700;
   text-align: center;
   
@@ -65,6 +75,7 @@ form {
   justify-content: center;
   align-items: center;
 
+  margin: 2vmin 0;
   
   input {
     margin: 1vmin 2vmin;
@@ -94,15 +105,18 @@ form {
       padding: 6px 20px;
 
       font-weight: 600;
-      border: 1px solid white;
-      border-radius: 5px;
       color: #18473E;
       background: #85D0C1;
+      
+      border: 1px solid white;
+      border-radius: 5px;
+      transition: 0.4s;
+
 
       &:hover {
         color: #fff;
-        background: rgb(200,200,200);
-        border-color: #18473E;
+        background: #18473E;
+        border: 2px solid #fff;
         transition: 0.4s;
       }
   }
@@ -188,6 +202,7 @@ p {
 }
 
 #status-message {
+  height: 100vh;
   color: lime;
 }
 
@@ -222,5 +237,10 @@ color: white;
   form {
     display: flex;
     flex-direction: column;  
+  }
+
+  nav {
+    height: 40px;
+    padding: 8vmin 0;
   }
 }
