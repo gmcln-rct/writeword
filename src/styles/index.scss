@@ -7,7 +7,6 @@ html {
 }
 
 body {
-    margin: 2vmin;
 
   display: flex;
   justify-content: center;
@@ -25,7 +24,6 @@ body {
 }
 
 .App {
-  padding: 1vmin;
 }
 
 code {
@@ -35,6 +33,8 @@ code {
 
 nav {
   height: 50px;
+  // background-size: cover;
+  // background: rgba(50,50,50,0.7);
 }
 
 .content {
@@ -43,6 +43,11 @@ nav {
   flex-wrap: wrap;
 
   width: 90vw;
+}
+
+#search-word {
+  padding: 2vmin 0;
+  border-top: 1px solid #fff;
 }
 
 .card {

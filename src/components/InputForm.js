@@ -6,29 +6,53 @@ const InputForm = () => {
   const {setSearchWord, setSearchType} = useContext(WordContext);  
 
   const [word, setWord] = useState('');
-  const [search, setSearch] = useState('');
+  const [searchType] = useState('');
   
   const handleSubmit = (e) => {
     e.preventDefault();
     setSearchWord(word);
+    setSearchType(searchType);
     setWord('');
+    setSearchType('');
   }
 
+  function handleChange(e) {
+    setSearchType(e.target.value);
+    let idx = e.target.selectedIndex;
+    searchType = e.target.options[idx].innerText;
+    return (
+      <div></div>
+    )
+  };
+
   return (
-    
     <>
       <form onSubmit={handleSubmit}>
-
         <input  type="text" 
                 placeholder="Enter Word" 
                 value={word}
                 onChange={(e) => setWord(e.target.value)} 
                 required />
-        <input type="submit" value="Check Word" />
-      </form>
-      <h2>
-        {word === '' ? "nothing" : word}
 
+        <select
+          className="select-css"
+          value={searchType}
+          onChange={handleChange}
+        >
+          <option value="ml">Synonyms</option>
+          <option value="sl">Sounds Like</option>
+          <option value="rel_rhym">Rhymes</option>
+          <option value="sp">Similar Spelling</option>
+          <option value="rel_jjb">Related Adjectives</option>
+          <option value="rel_jja">Related Nouns</option>
+
+
+
+        </select>
+        <input type="submit" value="Find Relate Words" />
+      </form>
+      <h2 id="search-word">
+        Current search word: {word === '' ? "nothing" : word}
       </h2>
       </>
       
