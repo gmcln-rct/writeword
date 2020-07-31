@@ -17,17 +17,19 @@ const InputForm = () => {
   return (
     
     <>
-
-        <h2>{word}</h2>
       <form onSubmit={handleSubmit}>
 
-      <input  type="text" 
-              placeholder="Enter Word" 
-              value={word}
-              onChange={(e) => setWord(e.target.value)} 
-              required />
-      <input type="submit" value="Check Word" />
-    </form>
+        <input  type="text" 
+                placeholder="Enter Word" 
+                value={word}
+                onChange={(e) => setWord(e.target.value)} 
+                required />
+        <input type="submit" value="Check Word" />
+      </form>
+      <h2>
+        {word === '' ? "nothing" : word}
+
+      </h2>
       </>
       
   );
