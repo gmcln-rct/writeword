@@ -1,8 +1,8 @@
 html {
-  background-size: cover;
-  background: #43C6AC;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #191654, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #191654, #43C6AC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  // background-size: cover;
+  // background: #43C6AC;  /* fallback for old browsers */
+  // background: -webkit-linear-gradient(to bottom, #191654, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
+  // background: linear-gradient(to bottom, #191654, #43C6AC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 
@@ -17,6 +17,15 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+    background-size: cover;
+  background: #43C6AC;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #191654, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #191654, #43C6AC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.App {
+  padding: 1vmin;
 }
 
 code {
@@ -38,16 +47,21 @@ code {
   padding: 1vmin 2vmin;
 
   color: #fff;
-  background: rgba(153, 155, 140, 0.8);
-  border-radius: 20px;
+  background: rgba(50, 50, 50, 0.8);
+  border-radius: 10px;
   border: 1px solid #fff;
 
   h3 {
+    margin: 0 0 1vmin 0;
     color: white;
     font-size: calc(18px + (24 - 18) * ((100vw - 300px) / (1800 - 300)));
     line-height: calc(24px + (28 - 24) * ((100vw - 300px) / (1800 - 300)));
 
     font-weight: 600;
+  }
+
+  p {
+        margin: 0 0 1vmin 0;
   }
 }
 
@@ -112,4 +126,15 @@ color: white;
   background: red;
 }
 
+form {
+  margin: 2vmin 0;
+
+
+  text-align: center;
+
+  input {
+    font-size: calc(18px + (24 - 18) * ((100vw - 300px) / (1800 - 300)));
+  line-height: calc(24px + (28 - 24) * ((100vw - 300px) / (1800 - 300)));
+  }
+}
 

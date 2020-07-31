@@ -8,16 +8,20 @@ export const WordContext = createContext({
 
 export function WordContextProvider(props) {
 
-    const budgetContext = useContext(WordContext);
+    const wordContext = useContext(WordContext);
 
-    const [name, setName] = useState(budgetContext.name);
-    const [searchType, setSearchType] = useState(budgetContext.searchType);
+    const [searchWord, setSearchWord] = useState(wordContext.searchWord);
+    const [searchType, setSearchType] = useState(wordContext.searchType);
+
+    // const enterWord = (title, director, year) => {
+    //     set([...Movies, { title, director, year, id: uuid() }]);
+    // };
 
     const provider = {
 
-        name,
-        setName: (name) => {
-            setName(name);
+        searchWord,
+        setSearchWord: (searchWord) => {
+            setSearchWord(searchWord);
         },
         searchType,
         setSearchType: (searchType) => {
