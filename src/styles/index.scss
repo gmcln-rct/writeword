@@ -33,6 +33,7 @@ code {
 
 nav {
   height: 50px;
+  margin: 2vmin 0 0 0;
   // background-size: cover;
   // background: rgba(50,50,50,0.7);
 }
@@ -43,40 +44,48 @@ form {
   // justify-content: center;
   align-items: center;
 
+  
+  input {
+    margin: 2vmin 0;
+    font-size: calc(18px + (24 - 18) * ((100vw - 300px) / (1800 - 300)));
+    line-height: calc(24px + (28 - 24) * ((100vw - 300px) / (1800 - 300)));
+    
+    text-align: center;
 
-  input[type='text']{
-    width: 100%;
+  &[type='text']{
     padding: 0.3rem;
     box-sizing: border-box;
     margin: 6px 0;
     color: #fff;
     font-weight: 600;
-    background: rgb(100,100,100);
-    border: 0;
+    background: rgb(50,50,50);
+    border: 1px solid white;
+    border-radius: 5px;
 
     &::placeholder {
       color: white;
       opacity: 0.8;
     }
   }
-  input[type='submit']{
+
+  &[type='submit']{
       display: block;
-      margin: 0.3rem auto;
       padding: 6px 20px;
 
       font-weight: 600;
       border: 1px solid white;
       border-radius: 5px;
       color: #fff;
-      background: aqua;
+      background: #43C6AC;
 
       &:hover {
-        color: aqua;
+        color: #43C6AC;
         background: rgb(200,200,200);
-        border-color: aqua;
+        border-color: #43C6AC;
         transition: 0.4s;
       }
   }
+    }
 }
 .content {
   display: flex;
@@ -96,14 +105,14 @@ form {
   margin: 1vmin;
   padding: 1vmin 2vmin;
 
-  color: #fff;
+  // color: #fff;
   // background: rgba(50, 50, 50, 0.8);
   border-radius: 10px;
   border: 1px solid #fff;
 
   h3 {
     margin: 0 0 1vmin 0;
-    color: white;
+    // color: white;
     font-size: calc(18px + (24 - 18) * ((100vw - 300px) / (1800 - 300)));
     line-height: calc(24px + (28 - 24) * ((100vw - 300px) / (1800 - 300)));
 
@@ -176,15 +185,5 @@ color: white;
   background: red;
 }
 
-form {
-  margin: 2vmin 0;
 
-
-  text-align: center;
-
-  input {
-    font-size: calc(18px + (24 - 18) * ((100vw - 300px) / (1800 - 300)));
-  line-height: calc(24px + (28 - 24) * ((100vw - 300px) / (1800 - 300)));
-  }
-}
 
