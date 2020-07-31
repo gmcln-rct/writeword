@@ -14,7 +14,6 @@ export function WordContextProvider(props) {
     const [searchType, setSearchType] = useState(wordContext.searchType);
 
 
-
     const provider = {
 
         searchWord,
