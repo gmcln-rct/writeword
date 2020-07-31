@@ -46,10 +46,10 @@ const InputForm = () => {
           <option value="rel_jjb">Related Adjectives</option>
           <option value="rel_jja">Related Nouns</option>
         </select> */}
-        <input type="submit" value="Find Relate Words" />
+        <input type="submit" value="Find Related Words" />
       </form>
       <h2 id="search-word">
-        Current search word: {word === '' ? "nothing" : word}
+        Current search term: <span id="yellow-text">{word === '' ? "nothing" : word}</span> 
       </h2>
       </>
       
