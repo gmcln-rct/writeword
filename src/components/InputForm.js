@@ -3,9 +3,10 @@ import React, { useContext, useState } from 'react';
 import { WordContext } from '../context/WordContext';
 
 const InputForm = () => {
-  const {setSearchWord} = useContext(WordContext);  
+  const {setSearchWord, setSearchType} = useContext(WordContext);  
 
   const [word, setWord] = useState('');
+  const [search, setSearch] = useState('');
   
   const handleSubmit = (e) => {
     e.preventDefault();
