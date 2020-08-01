@@ -5,6 +5,10 @@ export const WordContext = createContext({
          searchType: "ml",
        });
 
+export const SearchTypeReference = {
+    "ml": "Similar Meaning",
+    "sl": "Sounds Like"
+}
 
 export function WordContextProvider(props) {
 

@@ -10,6 +10,15 @@ const InputForm = () => {
 
   let searchWordDisplay = "";
   let searchTypeDisplay = "";
+
+   const SearchTypeReference = {
+    "ml": "Synonym",
+    "sl": "Sounds Similar",
+    "rel_rhym": "Rhyming Words",
+    "sp": "Similar Spelling",
+    "rel_jjb": "Related Adjectives",
+    "rel_jja": "Related Nouns",
+  }
   
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -23,8 +32,8 @@ const InputForm = () => {
   function handleChange(e) {
     setSearchType(e.target.value);
     let idx = e.target.selectedIndex;
-    searchType = e.target.options[idx].value;
-    console.log(e.target.options[idx]);
+    // searchType = e.target.options[idx].value;
+
     // searchTypeDisplay = e.target.options[idx].innerText;
     return (
       <div>Just a return value</div>
@@ -57,7 +66,8 @@ const InputForm = () => {
         <input type="submit" value="Find Related Words" />
       </form>
       <h2 id="search-word">
-        Current search: {searchTypeDisplay} <span id="yellow-text">{(!searchWord )? "" : searchWord}</span>
+        Search Term: <span id="yellow-text">{(!searchWord) ? "" : searchWord}</span>   |  
+        Search Type: <span id="yellow-text">{SearchTypeReference[searchType]}</span> 
       </h2>
     </>
   );
