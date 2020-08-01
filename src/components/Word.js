@@ -13,25 +13,25 @@ const Word = ({ word, score, tag }) => {
         // rgb = "26,22,85";
         // fontcolor = "rgb(255,255,255)";
         rgb = "255,255,255";
-        fontcolor = "rgb(26,22,85)";
+        fontcolor = "26,22,85";
         break;
       case (alpha > .50):
-        rgb = "56,56,85";
-        fontcolor = "rgb(255,255,255)";
+        rgb = "155,164,203";
+        fontcolor = "20,20,20";
         break;
       case (alpha > .30):
-        rgb = "155,164,203";
-        fontcolor = "rgb(20,20,20)";
+        rgb = "56,56,85";
+        fontcolor = "255,255,255";
         break;
       default:
         rgb = "154,154,194";
-        fontcolor = "rgb(5,5,5)";
+        fontcolor = "5,5,5";
 
     }
 
 
     return (
-      <div className="card" style={{ background: `rgba(${rgb},0.8)`, color: `${fontcolor}` }}>
+      <div className="card" style={{ background: `rgba(${rgb},0.8)`, color: `rgb(${fontcolor})` }}>
         <h3>{word}</h3>
         <p>Relevance: {percentage}%</p>
         {/* <p>{percentage}</p> */}
