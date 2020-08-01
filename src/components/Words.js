@@ -40,8 +40,7 @@ const Words = () => {
                     <>
                         {(Object.entries(value).length === 0) ? 
                         <div className="empty-div"></div>  :
-                        value.map(word =>
-
+                        data.map(word =>
                             <Word
                                 key={word.word}
                                 word={word.word}

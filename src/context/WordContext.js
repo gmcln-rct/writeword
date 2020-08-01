@@ -1,7 +1,7 @@
 import React, { useState, createContext, useContext } from 'react';
 
 export const WordContext = createContext({
-         searchWords: "",
+         searchWord: "",
          searchType: "ml",
        });
 
