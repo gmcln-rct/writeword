@@ -20,7 +20,7 @@ const Words = () => {
     let value = data;
     if (value !== undefined ) {
         console.log(Object.entries(value).length);
-    }
+    } 
 
     return (
         <>
@@ -38,7 +38,9 @@ const Words = () => {
             {
                 status === 'success' && (
                     <>
-                        {data.map(word =>
+                        {(Object.entries(value).length === 0) ? 
+                        <div className="empty-div"></div>  :
+                        value.map(word =>
 
                             <Word
                                 key={word.word}

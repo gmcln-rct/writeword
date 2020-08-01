@@ -18,7 +18,7 @@ const Word = ({ word, score, tag }) => {
         fontcolor = "rgb(255,255,255)";
         break;
       case (alpha > .30):
-        rgb = "105,104,130";
+        rgb = "155,164,203";
         fontcolor = "rgb(20,20,20)";
         break;
       default:
