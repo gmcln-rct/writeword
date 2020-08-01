@@ -54,7 +54,7 @@ const InputForm = () => {
         <input type="submit" value="Find Related Words" />
       </form>
       <h2 id="search-word">
-        Current search term: <span id="yellow-text">{!searchWord ? "nothing" : searchWord}</span>
+        Current search term: <span id="yellow-text">{(!searchWord )? "" : searchWord}</span>
       </h2>
     </>
   );

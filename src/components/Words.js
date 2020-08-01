@@ -31,7 +31,7 @@ const Words = () => {
             }
             {
                 status === 'error' && (
-                    <div id="status-message"> Error fetching data </div>
+                    <div id="status-message"> Error loading data </div>
                 )
             }
 
