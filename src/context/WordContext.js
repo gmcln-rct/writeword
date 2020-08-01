@@ -1,9 +1,9 @@
 import React, { useState, createContext, useContext } from 'react';
 
 export const WordContext = createContext({
-    word: "",
-    searchType: "ml"
-});
+         searchWords: "",
+         searchType: "ml",
+       });
 
 
 export function WordContextProvider(props) {

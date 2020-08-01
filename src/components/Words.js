@@ -16,7 +16,7 @@ const Words = () => {
     const { searchWord, searchType } = useContext(WordContext);
     // const [ word, setWord ] = useState("");
     const { data, status } = useQuery(['words', "ml", searchWord], fetchWords);
-    
+
     return (
         <>
 

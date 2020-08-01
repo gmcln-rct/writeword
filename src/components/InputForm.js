@@ -3,7 +3,7 @@ import React, { useContext, useState } from 'react';
 import { WordContext } from '../context/WordContext';
 
 const InputForm = () => {
-  const {setSearchWord, setSearchType} = useContext(WordContext);  
+  const { searchWord, setSearchWord, setSearchType } = useContext(WordContext);  
 
   const [word, setWord] = useState('');
   const [searchType, setSearch] = useState('');
@@ -14,7 +14,7 @@ const InputForm = () => {
     e.preventDefault();
     setSearchWord(word);
     setSearchType(searchType);
-    // searchWordDisplay = word;
+    searchWordDisplay = word;
     setWord('');
     setSearch('');
   }
@@ -29,8 +29,6 @@ const InputForm = () => {
   };
 
   return (
-
-
     <>
       <form onSubmit={handleSubmit}>
         <input
@@ -56,10 +54,7 @@ const InputForm = () => {
         <input type="submit" value="Find Related Words" />
       </form>
       <h2 id="search-word">
-        Current search term:{" "}
-        <span id="yellow-text">
-          {word === "" ? "nothing" : word}
-        </span>
+        Current search term: <span id="yellow-text">{!searchWord ? "nothing" : searchWord}</span>
       </h2>
     </>
   );
