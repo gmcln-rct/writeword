@@ -17,9 +17,13 @@ const Words = () => {
     // const [ word, setWord ] = useState("");
     const { data, status } = useQuery(['words', "ml", searchWord], fetchWords);
 
+    let value = data;
+    if (value !== undefined ) {
+        console.log(Object.entries(value).length);
+    }
+
     return (
         <>
-
             {
                 status === 'loading' && (
                     <div id="status-message">Data loading</div>
