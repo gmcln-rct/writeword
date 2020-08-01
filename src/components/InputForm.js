@@ -3,12 +3,13 @@ import React, { useContext, useState } from 'react';
 import { WordContext } from '../context/WordContext';
 
 const InputForm = () => {
-  const { searchWord, setSearchWord, setSearchType } = useContext(WordContext);  
+  let { searchWord, setSearchWord, searchType, setSearchType } = useContext(WordContext);  
 
   const [word, setWord] = useState('');
-  const [searchType, setSearch] = useState('');
+  const [search, setSearch] = useState('');
 
   let searchWordDisplay = "";
+  let searchTypeDisplay = "";
   
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -22,7 +23,9 @@ const InputForm = () => {
   function handleChange(e) {
     setSearchType(e.target.value);
     let idx = e.target.selectedIndex;
-    searchType = e.target.options[idx].innerText;
+    searchType = e.target.options[idx].value;
+    console.log(e.target.options[idx]);
+    // searchTypeDisplay = e.target.options[idx].innerText;
     return (
       <div>Just a return value</div>
     )
@@ -39,9 +42,9 @@ const InputForm = () => {
           required
         />
 
-        {/* <select
+        <select
           className="select-css"
-          value={searchType}
+          value={search}
           onChange={handleChange}
         >
           <option value="ml">Synonyms</option>
@@ -50,11 +53,11 @@ const InputForm = () => {
           <option value="sp">Similar Spelling</option>
           <option value="rel_jjb">Related Adjectives</option>
           <option value="rel_jja">Related Nouns</option>
-        </select> */}
+        </select>
         <input type="submit" value="Find Related Words" />
       </form>
       <h2 id="search-word">
-        Current search term: <span id="yellow-text">{(!searchWord )? "" : searchWord}</span>
+        Current search: {searchTypeDisplay} <span id="yellow-text">{(!searchWord )? "" : searchWord}</span>
       </h2>
     </>
   );

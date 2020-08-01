@@ -5,8 +5,8 @@ import Word from './Word';
 import { WordContext } from '../context/WordContext';
 
 
-const fetchWords = async (key, search, word) => {
-    const res = await fetch(`https://api.datamuse.com/words?${search}=${word}`);
+const fetchWords = async (key, searchType, word) => {
+    const res = await fetch(`https://api.datamuse.com/words?${searchType}=${word}`);
     return res.json();
 
 }
@@ -15,7 +15,7 @@ const Words = () => {
 
     const { searchWord, searchType } = useContext(WordContext);
     // const [ word, setWord ] = useState("");
-    const { data, status } = useQuery(['words', "ml", searchWord], fetchWords);
+    const { data, status } = useQuery(['words', searchType, searchWord], fetchWords);
 
     let value = data;
     if (value !== undefined ) {
