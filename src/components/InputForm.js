@@ -56,14 +56,14 @@ const InputForm = () => {
           value={search}
           onChange={handleChange}
         >
+          <option value="" selected>Choose Search Type</option>
           <option value="ml">Synonyms</option>
-          <option value="sl">Sounds Like</option>
-          <option value="rel_rhym">Rhymes</option>
+          <option value="sl">Sounds Similar</option>
           <option value="sp">Similar Spelling</option>
           <option value="rel_jjb">Related Adjectives</option>
           <option value="rel_jja">Related Nouns</option>
         </select>
-        <input type="submit" value="Find Related Words" />
+        <input type="submit" value="Find Words" />
       </form>
       <h2 id="search-word">
         Search Term: <span id="yellow-text">{(!searchWord) ? "" : searchWord}</span>   |  
