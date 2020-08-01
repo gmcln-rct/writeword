@@ -65,11 +65,13 @@ nav {
   text-align: center;
   
   color: #fff;
-  background: rgb(20, 57, 97);
+  background: rgba(13, 38, 65, 0.7);
   background-size: cover;
+
+  border-bottom: 1px solid #fff;
 }
 
-// FIORM
+// FORM
 
 form {
   display: flex;

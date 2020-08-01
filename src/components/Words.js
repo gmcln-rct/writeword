@@ -22,7 +22,7 @@ const Words = () => {
 
             {
                 status === 'loading' && (
-                    <div id="status-message">Tauntauns are loading</div>
+                    <div id="status-message">Data loading</div>
                 )
             }
             {
