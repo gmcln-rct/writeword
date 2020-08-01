@@ -10,8 +10,10 @@ const Word = ({ word, score, tag }) => {
 
     switch(true) {
       case (alpha > .70):
-        rgb = "26,22,85";
-        fontcolor = "rgb(255,255,255)";
+        // rgb = "26,22,85";
+        // fontcolor = "rgb(255,255,255)";
+        rgb = "255,255,255";
+        fontcolor = "rgb(26,22,85)";
         break;
       case (alpha > .50):
         rgb = "56,56,85";
