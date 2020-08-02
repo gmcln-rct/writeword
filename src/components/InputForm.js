@@ -12,12 +12,12 @@ const InputForm = () => {
   let searchTypeDisplay = "";
 
    const SearchTypeReference = {
-    "ml": "Synonym",
-    "sl": "Sounds Similar",
-    "rel_rhym": "Rhyming Words",
-    "sp": "Similar Spelling",
-    "rel_jjb": "Related Adjectives",
-    "rel_jja": "Related Nouns",
+    "ml": "synonym",
+    "sl": "sounds similar",
+    "rel_rhym": "rhyming words",
+    "sp": "similar spelling",
+    "rel_jjb": "related adjectives",
+    "rel_jja": "related nouns",
   }
   
   const handleSubmit = (e) => {
@@ -66,8 +66,8 @@ const InputForm = () => {
         <input type="submit" value="Find Words" />
       </form>
       <h2 id="search-word">
-        Search Term: <span id="yellow-text">{(!searchWord) ? "" : searchWord}</span>   |  
-        Search Type: <span id="yellow-text">{SearchTypeReference[searchType]}</span> 
+        Search Term: <span id="yellow-text">{(!searchWord) ? "" : searchWord}</span> </h2>
+        <h2 id="search-word">Search Type: <span id="searchtype-text">{SearchTypeReference[searchType]}</span> 
       </h2>
     </>
   );

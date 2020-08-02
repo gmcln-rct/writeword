@@ -114,7 +114,7 @@ form {
       color: #18473E;
       background: #b6d6d0;
       
-      border: 1px solid white;
+      border: 1px solid #18473E;
       border-radius: 5px;
       transition: 0.4s;
 
@@ -188,22 +188,26 @@ form {
 .content {
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-content: flex-start;
   flex-wrap: wrap;
-  height: 100%;
+
+  min-height: 80vh; 
+  margin: 3vmin 0 0 0;
   // width: 100vw;
 }
 
 #search-word {
-  padding: 2vmin 0;
+  margin: 0 0 1vmin 0;
+  padding: 1vmin 0;
 
-  font-size: calc(24px + (36 - 24) * ((100vw - 300px) / (1800 - 300)));
+  font-size: calc(24px + (32 - 24) * ((100vw - 300px) / (1800 - 300)));
   line-height: calc(24px + (36 - 24) * ((100vw - 300px) / (1800 - 300)));
   font-weight: 600;
   text-align: center;
 
   color: #fff;
-  border-top: 1px solid #fff;
+  // border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
 }
 
 .card {
@@ -233,27 +237,21 @@ form {
   }
 }
 
-h2 {
 
-
-
-
-}
-
-h3 {
-  // color: #fff;
-
-  text-align: center;
-}
-
-p { 
-  // color: #fff;
+p, h3 {
 
   text-align: center;
 }
 
 
 #yellow-text {
+  margin: 0 2vmin;
+  color: rgb(255,255,175);
+  font-weight: 700;
+}
+
+#searchtype-text {
+  margin: 0 2vmin;
   color: rgb(255,255,175);
   font-weight: 700;
 }
