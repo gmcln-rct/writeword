@@ -16,6 +16,7 @@ const InputForm = () => {
     "sl": "sounds similar",
     "rel_rhym": "rhyming words",
     "sp": "similar spelling",
+    "rel_ant": "antonym",
     "rel_jjb": "related adjectives",
     "rel_jja": "related nouns",
   }
@@ -58,6 +59,7 @@ const InputForm = () => {
         >
           <option value="" defaultValue>Choose Search Type</option>
           <option value="ml">Synonyms</option>
+          <option value="rel_ant">Antonyms</option>
           <option value="sl">Sounds Similar</option>
           <option value="sp">Similar Spelling</option>
           <option value="rel_jjb">Related Adjectives</option>
