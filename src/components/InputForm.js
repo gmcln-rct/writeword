@@ -56,7 +56,7 @@ const InputForm = () => {
           value={search}
           onChange={handleChange}
         >
-          <option value="" selected>Choose Search Type</option>
+          <option value="" defaultValue>Choose Search Type</option>
           <option value="ml">Synonyms</option>
           <option value="sl">Sounds Similar</option>
           <option value="sp">Similar Spelling</option>
