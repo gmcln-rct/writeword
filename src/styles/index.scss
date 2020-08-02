@@ -78,11 +78,14 @@ form {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: rgba(10,10,10,0.5);
-
+  // background-color: rgba(10,10,10,0.5);
+  background-color: rgbA(119, 119, 119, 0.5);
+-webkit-box-shadow: inset 0px -10px 36px -32px rgba(0,0,0,1);
+-moz-box-shadow: inset 0px -10px 36px -32px rgba(0,0,0,1);
+box-shadow: inset 0px -10px 36px -32px rgba(0,0,0,1);
   
   input {
-    margin: 2vmin 2vmin;
+    margin: 2vmin;
     font-size: calc(18px + (24 - 18) * ((100vw - 300px) / (1800 - 300)));
     line-height: calc(24px + (28 - 24) * ((100vw - 300px) / (1800 - 300)));
     
@@ -102,17 +105,17 @@ form {
 
     &::placeholder {
       color: white;
-      opacity: 0.8;
+
     }
   }
 
   &[type='submit']{
       display: block;
-      padding: 1vmin 4vmin;
+      padding: 1vmin 5vmin;
 
       font-weight: 600;
       color: #18473E;
-      background: #b6d6d0;
+      background: #fff;
       
       border: 1px solid #18473E;
       border-radius: 5px;
@@ -163,14 +166,17 @@ form {
     background-size: .65em auto, 100%;
     opacity: 0.8;
     z-index: 2;
+
+    &:hover {
+      border-color: #888;
+    }
+    
 }
 
 .select-css::-ms-expand {
     display: none;
 }
-.select-css:hover {
-    border-color: #888;
-}
+
 
 .select-css option {
     font-weight:normal;
@@ -192,7 +198,8 @@ form {
   flex-wrap: wrap;
 
   min-height: 80vh; 
-  margin: 3vmin 0 0 0;
+  margin: 2vmin 0 0 0;
+  padding: 0 4vmin;
   // width: 100vw;
 }
 
@@ -213,7 +220,7 @@ form {
 .card {
   min-width: 150px;
   margin: 1vmin;
-  padding: 1vmin 1vmin;
+  padding: 1vmin 2vmin;
 
   // color: #fff;
   // background: rgba(50, 50, 50, 0.8);
@@ -290,6 +297,10 @@ p, h3 {
   nav {
     height: 40px;
     padding: 4vmin 0;
+  }
+
+  .content {
+      margin: 5vmin 0 0 0;
   }
 
   #search-word {
