@@ -9,7 +9,6 @@ const InputForm = () => {
   const [search, setSearch] = useState('');
 
   let searchWordDisplay = "";
-  let searchTypeDisplay = "";
 
    const SearchTypeReference = {
     "ml": "similar or related meaning",
@@ -35,7 +34,6 @@ const InputForm = () => {
     let idx = e.target.selectedIndex;
     // searchType = e.target.options[idx].value;
 
-    // searchTypeDisplay = e.target.options[idx].innerText;
     return (
       <div>Just a return value</div>
     )
