@@ -136,22 +136,28 @@ form {
 
   button {
       display: block;
-      padding: 1vmin 5vmin;
+      padding: 1vmin 6vmin;
 
       font-size: calc(18px + (24 - 18) * ((100vw - 300px) / (1800 - 300)));
-      font-weight: 600;
       line-height: calc(24px + (28 - 24) * ((100vw - 300px) / (1800 - 300)));
-      color: #18473E;
-      background: #fff;
+      font-weight: 700;
+      color: #fff;
+      background: $darkblue;
+
       
-      border: 1px solid #18473E;
-      border-radius: 5px;
+      border: 2px solid #fff;
+      border-radius: 10px;
+
+      overflow: visible; /* Edge hides overflow */
+      text-transform: none; /* Firefox inherits text-transform */
+      -webkit-appearance: button; /* Safari otherwise prevents some styles */
+
       transition: 0.4s;
 
       &:hover {
-        color: #fff;
-        background: #18473E;
-        border: 2px solid #fff;
+        color: $darkblue;
+        background: #fff;
+        border: 2px solid $darkblue;
         transition: 0.4s;
       }
   }

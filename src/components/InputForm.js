@@ -12,8 +12,8 @@ const InputForm = () => {
   let searchTypeDisplay = "";
 
    const SearchTypeReference = {
-    "ml": "synonym",
-     "rel_ant": "antonym",
+    "ml": "similar meaning",
+     "rel_ant": "opposite meaning",
     "sl": "sounds similar",
     "rel_rhy": "rhyming words",
     "sp": "similar spelling",
@@ -59,12 +59,10 @@ const InputForm = () => {
           onChange={handleChange}
         >
           <option value="" defaultValue>Choose Search Type</option>
-          <option value="ml">Synonyms</option>
-          <option value="rel_ant">Antonyms</option>
+          <option value="ml">Similar Meaning</option>
+          <option value="rel_ant">Opposite Meaning</option>
           <option value="sl">Sounds Similar</option>
           <option value="rel_rhy">Rhymes</option>
-
-          <option value="sp">Similar Spelling</option>
           <option value="rel_jjb">Related Adjectives</option>
           <option value="rel_jja">Related Nouns</option>
         </select>
