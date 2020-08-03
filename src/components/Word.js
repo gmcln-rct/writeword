@@ -4,6 +4,7 @@ import React from 'react';
 const Word = ({ word, score, tag }) => {
 
     let percentage = isNaN(Math.ceil((score / 1200))) ? 1 : Math.ceil((score / 1200));
+    percentage = percentage > 100? 100 : percentage;
     let alpha = ((score/1200)/100).toFixed(2);
     let rgb;
     let fontcolor = "#000"
