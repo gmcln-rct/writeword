@@ -67,10 +67,10 @@ nav {
 // FORM
 
 form {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
 
   padding: 1vmin 0;
   background-color: rgbA(119, 119, 119, 0.7);
@@ -84,6 +84,13 @@ form {
     line-height: calc(22px + (36 - 22) * ((100vw - 300px) / (1800 - 300)));
     font-weight: 700;
     color: #ffffff;
+  }
+
+  #input-span {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
   }
   
   input {
@@ -296,31 +303,37 @@ footer {
 //                                                 
               
 
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 800px) {
   form {
-    display: flex;
-    flex-direction: column;  
 
-    padding: 4vmin 0;
+
+    padding: 1vmin 0;
+
+    #input-span {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
 
     h1 {
-      margin: 2vmin 0;
+      margin: 2vmin 0 0 0;
     }
 
     input  {
-      margin: 4vmin 0vmin;
+      margin: 1vmin 0vmin;
     }
 
     button {
-      margin: 4vmin 0 2vmin 0;
-      padding: 2vmin 12vmin;
+      margin: 3vmin 0 2vmin 0;
+      padding: 1vmin 12vmin;
 
       color: #fff;
       background: $darkblue;
     }
 
     .select-css {
-      padding: 2vmin 4vmin;
+      padding: 1vmin 4vmin;
     }
 
   }

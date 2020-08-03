@@ -42,9 +42,9 @@ const InputForm = () => {
   return (
     <>
       <form onSubmit={handleSubmit}>
+        <span id="input-span">
+
         <h1 className="input-header">Show me words that...</h1>
-
-
         <select
           className="select-css"
           name="choose search type"
@@ -67,6 +67,7 @@ const InputForm = () => {
           onChange={(e) => setWord(e.target.value)}
           required
         />
+        </span>
         <button type="submit" name="submit" value="Submit" >Submit</button>
         {/* <input type="submit" name="submit" value="Submit" /> */}
       </form>
