@@ -26,7 +26,6 @@ const Word = ({ word, score, tag }) => {
       default:
         rgb = "154,154,194";
         fontcolor = "5,5,5";
-
     }
 
 

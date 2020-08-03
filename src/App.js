@@ -1,7 +1,8 @@
 import React, { useState} from 'react';
-import Words from './components/Words';
 import InputForm from './components/InputForm';
 import Navbar from './components/Navbar';
+import Words from './components/Words';
+import Footer from './components/Footer';
 import { ReactQueryDevtools } from "react-query-devtools";
 
 import { WordContextProvider } from './context/WordContext';
@@ -12,12 +13,13 @@ function App() {
   return (
     <div className="App">
       <WordContextProvider>
-      <Navbar />
-      <InputForm />
-      <div className="content">
-        <Words />
-      </div>
-        </WordContextProvider>
+        <Navbar />
+        <InputForm />
+        <div className="content">
+          <Words />
+        </div>
+      </WordContextProvider>
+      <Footer />
     </div>
   );
 }

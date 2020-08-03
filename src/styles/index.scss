@@ -3,7 +3,7 @@
   @import url("https://use.typekit.net/glp0pxk.css");
   @import url("https://use.typekit.net/glp0pxk.css");
 
-
+@import 'variables';
 
 html {
 
@@ -270,6 +270,16 @@ p, h3 {
 
 .empty-div {
   height: 100vh;
+}
+
+footer {
+
+  margin: 4vmin 0;
+  color: rgb(26, 22, 85);
+
+        font-size: calc(18px + (24 - 18) * ((100vw - 300px) / (1800 - 300)));
+      line-height: calc(22px + (28 - 22) * ((100vw - 300px) / (1800 - 300)));
+  text-align: center;
 }
 
 //   ______   ___     ___      .______   ___   ___ 
