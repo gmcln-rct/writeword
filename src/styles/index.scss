@@ -170,6 +170,14 @@ box-shadow: inset 0px -10px 36px -32px rgba(0,0,0,1);
     &:hover {
       border-color: #888;
     }
+
+    &option {
+      font-weight:normal;
+    }
+
+    &:focus {
+      outline: none;
+    }
     
 }
 
@@ -178,13 +186,6 @@ box-shadow: inset 0px -10px 36px -32px rgba(0,0,0,1);
 }
 
 
-.select-css option {
-    font-weight:normal;
-}
-
-.select-css:focus {
-    outline: none;
-}
 }
 
 
