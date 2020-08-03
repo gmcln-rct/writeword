@@ -242,7 +242,8 @@ form {
   p {
       font-size: calc(16px + (18 - 16) * ((100vw - 300px) / (1800 - 300)));
       line-height: calc(20px + (24 - 20) * ((100vw - 300px) / (1800 - 300)));
-        // margin: 0 0 1vmin 0;
+
+      filter: brightness(0.7);
         // background: red;
   }
 }
@@ -268,7 +269,7 @@ p, h3 {
 
 #status-message {
   height: 100vh;
-  color: lime;
+  color: rgb(160, 247, 160);
 }
 
 .empty-div {
