@@ -42,14 +42,8 @@ const InputForm = () => {
   return (
     <>
       <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          placeholder="Enter Word"
-          autoFocus
-          value={word}
-          onChange={(e) => setWord(e.target.value)}
-          required
-        />
+        <h1 className="input-header">Show me words that...</h1>
+
 
         <select
           className="select-css"
@@ -58,13 +52,21 @@ const InputForm = () => {
           onChange={handleChange}
         >
           <option value="" defaultValue>Choose Search Type</option>
-          <option value="ml">Similar or Related Meaning</option>
+          <option value="ml">have similar meaning to:</option>
           <option value="rel_ant">Opposite Meaning</option>
           <option value="sl">Sounds Similar</option>
           <option value="rel_rhy">Rhymes</option>
           <option value="rel_jjb">Related Adjectives</option>
           <option value="rel_jja">Related Nouns</option>
         </select>
+        <input
+          type="text"
+          placeholder="Enter Word"
+          autoFocus
+          value={word}
+          onChange={(e) => setWord(e.target.value)}
+          required
+        />
         <button type="submit" name="submit" value="Submit" >Submit</button>
         {/* <input type="submit" name="submit" value="Submit" /> */}
       </form>

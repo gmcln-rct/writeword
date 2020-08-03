@@ -30,6 +30,7 @@ const Words = () => {
                     <div id="status-message">Data loading</div>
                 )
             }
+            
             {
                 status === 'error' && (
                     <div id="status-message"> Error loading data </div>
