@@ -5,7 +5,7 @@ import Word from './Word';
 import { WordContext } from '../context/WordContext';
 
 
-const fetchWords = async (key, searchType, word) => {
+const fetchWords = async (searchType, word) => {
     if (!word || word === "") {
         word = "nothing";
     }
@@ -15,9 +15,8 @@ const fetchWords = async (key, searchType, word) => {
 }
 
 const Words = () => {
-
     const { searchWord, searchType } = useContext(WordContext);
-    const { data, status } = useQuery(['words', searchType, searchWord], fetchWords);
+    const { data, status } = useQuery([ searchType, searchWord], fetchWords);
 
     let value = data;
     if (value !== undefined ) {
