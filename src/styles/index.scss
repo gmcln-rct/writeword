@@ -64,11 +64,14 @@ nav {
   font-weight: 700;
   text-align: center;
   
-  color: #fff;
-  background: rgba(13, 38, 65, 0.7);
+  color: $darkblue;
+  background: rgba(255, 255, 255, 1);
   background-size: cover;
+  -webkit-box-shadow: inset 0px -5px 15px 3px rgba(85,85,85,0.2);
+  -moz-box-shadow: inset 0px -5px 15px 3px rgba(85,85,85,0.2);
+  box-shadow: inset 0px -5px 15px 3px rgba(85,85,85,0.2);
 
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #555;
 }
 
 // FORM
@@ -79,10 +82,10 @@ form {
   justify-content: center;
   align-items: center;
   // background-color: rgba(10,10,10,0.5);
-  background-color: rgbA(119, 119, 119, 0.5);
--webkit-box-shadow: inset 0px -10px 36px -32px rgba(0,0,0,1);
--moz-box-shadow: inset 0px -10px 36px -32px rgba(0,0,0,1);
-box-shadow: inset 0px -10px 36px -32px rgba(0,0,0,1);
+  background-color: rgbA(119, 119, 119, 0.7);
+  -webkit-box-shadow: inset 0px -10px 36px -32px rgba(0,0,0,1);
+  -moz-box-shadow: inset 0px -10px 36px -32px rgba(0,0,0,1);
+  box-shadow: inset 0px -10px 36px -32px rgba(0,0,0,1);
   
   input {
     margin: 2vmin;
@@ -277,8 +280,8 @@ footer {
   margin: 4vmin 0;
   color: rgb(26, 22, 85);
 
-        font-size: calc(18px + (24 - 18) * ((100vw - 300px) / (1800 - 300)));
-      line-height: calc(22px + (28 - 22) * ((100vw - 300px) / (1800 - 300)));
+  font-size: calc(18px + (24 - 18) * ((100vw - 300px) / (1800 - 300)));
+  line-height: calc(22px + (28 - 22) * ((100vw - 300px) / (1800 - 300)));
   text-align: center;
 }
 
