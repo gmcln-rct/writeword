@@ -53,11 +53,11 @@ const InputForm = () => {
         >
           <option value="" defaultValue>Choose Search Type</option>
           <option value="ml">have similar meaning to:</option>
-          <option value="rel_ant">Opposite Meaning</option>
-          <option value="sl">Sounds Similar</option>
-          <option value="rel_rhy">Rhymes</option>
-          <option value="rel_jjb">Related Adjectives</option>
-          <option value="rel_jja">Related Nouns</option>
+          <option value="rel_ant">have opposite meaning to:</option>
+          <option value="sl">sound similar to:</option>
+          <option value="rel_rhy">rhymes with:</option>
+          <option value="rel_jjb">are adjectives related to:</option>
+          <option value="rel_jja">are nouns related to:</option>
         </select>
         <input
           type="text"

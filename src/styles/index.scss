@@ -76,9 +76,16 @@ form {
   -webkit-box-shadow: inset 0px -10px 36px -32px rgba(0,0,0,1);
   -moz-box-shadow: inset 0px -10px 36px -32px rgba(0,0,0,1);
   box-shadow: inset 0px -10px 36px -32px rgba(0,0,0,1);
+
+  h1 {
+    font-size: calc(18px + (24 - 18) * ((100vw - 300px) / (1800 - 300)));
+    line-height: calc(24px + (28 - 24) * ((100vw - 300px) / (1800 - 300)));
+    font-weight: 700;
+    color: #ffffff;
+  }
   
   input {
-    margin: 2vmin;
+    margin: 2vmin 1vmin;
     font-size: calc(18px + (24 - 18) * ((100vw - 300px) / (1800 - 300)));
     line-height: calc(24px + (28 - 24) * ((100vw - 300px) / (1800 - 300)));
     
@@ -86,14 +93,14 @@ form {
 
     &[type='text']{
       // margin: 6px 0;
-      padding: 1vmin 4vmin;
+      padding: 1vmin 0vmin;
       box-sizing: border-box;
 
       font-weight: 600;
       color: #fff;
-      background: rgba(0,0,0, 0.9);
+      background: rgba(5, 5, 5, 0.8);
       border: 1px solid white;
-      border-radius: 5px;
+      // border-radius: 5px;
       overflow: hidden;
 
       &::placeholder {
@@ -106,9 +113,10 @@ form {
 
   button {
       display: block;
+      margin: 0 0 0 4vmin;
       padding: 1vmin 6vmin;
 
-      font-size: calc(18px + (24 - 18) * ((100vw - 300px) / (1800 - 300)));
+      font-size: calc(18px + (28 - 18) * ((100vw - 300px) / (1800 - 300)));
       line-height: calc(24px + (28 - 24) * ((100vw - 300px) / (1800 - 300)));
       font-weight: 700;
       color: #fff;
@@ -133,11 +141,9 @@ form {
   }
 
       .select-css {
-        // width: 16rem;
         max-width:90%;
-        // height: 2.2em;
-        margin: 2vmin 2vmin;
-        padding: 1vmin 3vmin;
+        margin: 2vmin 1vmin;
+        padding: 1vmin 0vmin 1vmin 2vmin;
 
         color: #084769;
         background-color: #084769;
@@ -166,12 +172,12 @@ form {
         opacity: 0.8;
         z-index: 2;
 
-        &:hover {
-          border-color: #888;
-        }
-
         &option {
           font-weight:normal;
+        }
+
+        &:hover {
+          border-color: #888;
         }
 
         &:focus {
@@ -296,6 +302,10 @@ footer {
     flex-direction: column;  
 
     padding: 4vmin 0;
+
+    h1 {
+      margin: 2vmin 0;
+    }
 
     input  {
       margin: 4vmin 0vmin;
