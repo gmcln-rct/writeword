@@ -45,6 +45,7 @@ const InputForm = () => {
         <input
           type="text"
           placeholder="Enter Word"
+          autoFocus
           value={word}
           onChange={(e) => setWord(e.target.value)}
           required
