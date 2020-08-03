@@ -3,7 +3,7 @@ import React, {useContext} from 'react';
 const Navbar = () => {
 
     return ( 
-        <nav>
+        <nav role="navigation">
             The Write Word
         </nav>
      );

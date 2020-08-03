@@ -54,6 +54,7 @@ const InputForm = () => {
 
         <select
           className="select-css"
+          name="choose search type"
           value={search}
           onChange={handleChange}
         >
@@ -67,7 +68,8 @@ const InputForm = () => {
           <option value="rel_jjb">Related Adjectives</option>
           <option value="rel_jja">Related Nouns</option>
         </select>
-        <input type="submit" value="Submit" />
+        <button type="submit" name="submit" value="Submit" >Submit</button>
+        {/* <input type="submit" name="submit" value="Submit" /> */}
       </form>
       <h2 id="search-word">
         Search Term: <span id="yellow-text">{(!searchWord) ? "" : searchWord}</span> </h2>
