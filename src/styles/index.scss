@@ -52,10 +52,7 @@ nav {
   // width: 100vw;
   height: 50px;
   // margin: 1vmin 0;
-  padding: 2vmin 0;
-  // background-size: cover;
-  // background: rgba(50,50,50,0.7);
-  // font-family: goodlife-script, sans-serif;
+  padding: 2vmin 0 2vmin 0;
 
   font-family: pauline, sans-serif;
   font-style: normal;
@@ -147,7 +144,7 @@ form {
     max-width:90%;
     // height: 2.2em;
     margin: 2vmin 2vmin;
-    padding: 1vmin 5vmin;
+    padding: 1vmin 3vmin;
 
     color: #084769;
     background-color: #084769;
@@ -317,8 +314,8 @@ footer {
       background: $darkblue;
     }
 
-      .select-css {
-      padding: 2vmin 8vmin;
+    .select-css {
+      padding: 2vmin 4vmin;
     }
 
   }
