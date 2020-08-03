@@ -59,8 +59,8 @@ nav {
 
   font-family: pauline, sans-serif;
   font-style: normal;
-  font-size: calc(36px + (64 - 36) * ((100vw - 300px) / (1800 - 300)));
-  line-height: calc(36px + (68 - 36) * ((100vw - 300px) / (1800 - 300)));
+  font-size: calc(42px + (64 - 42) * ((100vw - 300px) / (1800 - 300)));
+  line-height: calc(42px + (68 - 42) * ((100vw - 300px) / (1800 - 300)));
   font-weight: 700;
   text-align: center;
   
@@ -94,44 +94,24 @@ form {
     
     text-align: center;
 
-  &[type='text']{
-    // margin: 6px 0;
-    padding: 1vmin 4vmin;
-    box-sizing: border-box;
-
-    font-weight: 600;
-    color: #fff;
-    background: rgba(0,0,0, 0.9);
-    border: 1px solid white;
-    border-radius: 5px;
-    overflow: hidden;
-
-    &::placeholder {
-      color: white;
-
-    }
-  }
-
-  &[type='submit']{
-      display: block;
-      padding: 1vmin 5vmin;
+    &[type='text']{
+      // margin: 6px 0;
+      padding: 1vmin 4vmin;
+      box-sizing: border-box;
 
       font-weight: 600;
-      color: #18473E;
-      background: #fff;
-      
-      border: 1px solid #18473E;
+      color: #fff;
+      background: rgba(0,0,0, 0.9);
+      border: 1px solid white;
       border-radius: 5px;
-      transition: 0.4s;
+      overflow: hidden;
 
+      &::placeholder {
+        color: white;
 
-      &:hover {
-        color: #fff;
-        background: #18473E;
-        border: 2px solid #fff;
-        transition: 0.4s;
       }
-  }
+    }
+
   }
 
   button {
@@ -162,17 +142,12 @@ form {
       }
   }
 
-  // select {
-  //   margin: 1vmin 2vmin;
-  // }
-
-
   .select-css {
-    width: 16rem;
+    // width: 16rem;
     max-width:90%;
     // height: 2.2em;
     margin: 2vmin 2vmin;
-    padding: 10px 30px;
+    padding: 1vmin 5vmin;
 
     color: #084769;
     background-color: #084769;
@@ -336,21 +311,27 @@ footer {
 
     button {
       margin: 4vmin 0 2vmin 0;
-      padding: 2vmin 10vmin;
+      padding: 2vmin 12vmin;
 
       color: #fff;
       background: $darkblue;
     }
+
+      .select-css {
+      padding: 2vmin 8vmin;
+    }
+
   }
 
   nav {
     height: 40px;
-    padding: 4vmin 0;
+    padding: 6vmin 0 4vmin 0;
   }
 
   .content {
       margin: 5vmin 0 0 0;
   }
+
 
   #search-word {
 
