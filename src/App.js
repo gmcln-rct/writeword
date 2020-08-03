@@ -15,9 +15,9 @@ function App() {
       <WordContextProvider>
         <Navbar />
         <InputForm />
-        <div className="content">
+        <main className="content">
           <Words />
-        </div>
+        </main>
       </WordContextProvider>
       <Footer />
     </div>

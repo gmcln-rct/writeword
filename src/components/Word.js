@@ -3,7 +3,7 @@ import React from 'react';
 
 const Word = ({ word, score, tag }) => {
 
-    let percentage = Math.ceil((score/1200));
+    let percentage = isNaN(Math.ceil((score / 1200))) ? 1 : Math.ceil((score / 1200));
     let alpha = ((score/1200)/100).toFixed(2);
     let rgb;
     let fontcolor = "#000"
