@@ -67,12 +67,12 @@ nav {
 // FORM
 
 form {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-  padding: 1vmin 0;
+  padding: 2vmin 0;
   background-color: rgbA(119, 119, 119, 0.7);
   -webkit-box-shadow: inset 0px -10px 36px -32px rgba(0,0,0,1);
   -moz-box-shadow: inset 0px -10px 36px -32px rgba(0,0,0,1);
@@ -122,7 +122,7 @@ form {
 
   button {
       display: block;
-      margin: 0 0 0 4vmin;
+      margin: 1vmin 0 0 0;
       padding: 1vmin 6vmin;
 
       font-size: calc(18px + (28 - 18) * ((100vw - 300px) / (1800 - 300)));
@@ -303,7 +303,7 @@ footer {
 //                                                 
               
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 820px) {
   form {
 
 
