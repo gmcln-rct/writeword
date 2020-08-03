@@ -4,7 +4,7 @@ const Footer = () => {
 
     return (
         <footer>
-            Data Source: <a href="https://www.datamuse.com/api/" target="_blank">Datamuse API</a>
+            Data Source: <a href="https://www.datamuse.com/api/" target="_blank" rel="noopener noreferrer">Datamuse API</a>
         </footer>
     );
 }
