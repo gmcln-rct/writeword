@@ -1,4 +1,4 @@
-# The Write Word Thesaurus Tool
+# The Write Word - Thesaurus Tool for Writers
 
 The project helps users word inspirations for your writing project with synonyms, antonyms, rhymes, related words and more. Developed by Glenn McClanan using the Datamuse API.
 
