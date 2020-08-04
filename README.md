@@ -1,3 +1,7 @@
-# writeword
+# The Write Word Thesaurus Tool
 
-Write Word is a web app that helps writers to find the right word, with similar meaning, opposite meaning, rhyme, etc.
+The project helps users word inspirations for your writing project with synonyms, antonyms, rhymes, related words and more. Developed by Glenn McClanan using the Datamuse API.
+
+The project was built with React, using React Query, JavaScript and SASS.
+
+The API source is Datamuse API: https://www.datamuse.com/api/
