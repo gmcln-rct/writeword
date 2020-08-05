@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d7073fd58ccd99bda96a8a4a03fa880e",
+    "revision": "5491ec2ef8c91ccf5243ffef3dd8406f",
     "url": "/gmcln-rct.github.io/writeword/index.html"
   },
   {
-    "revision": "c62e0c206dbb876674ae",
-    "url": "/gmcln-rct.github.io/writeword/static/css/main.9b6b136e.chunk.css"
+    "revision": "ac2d54481139d9030419",
+    "url": "/gmcln-rct.github.io/writeword/static/css/main.2a4aac4c.chunk.css"
   },
   {
     "revision": "dc0c5e8d5f74dea03026",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/gmcln-rct.github.io/writeword/static/js/2.e2dc50eb.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c62e0c206dbb876674ae",
-    "url": "/gmcln-rct.github.io/writeword/static/js/main.317c886d.chunk.js"
+    "revision": "ac2d54481139d9030419",
+    "url": "/gmcln-rct.github.io/writeword/static/js/main.d3698f3e.chunk.js"
   },
   {
     "revision": "1887a89c9d793c3ce7f9",
