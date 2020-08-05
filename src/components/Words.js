@@ -9,6 +9,9 @@ const fetchWords = async (searchType, word) => {
     if (!word || word === "") {
         word = "nothing";
     }
+    if (!searchType || searchType === "") {
+        searchType = "ml";
+    }
     const res = await fetch(`https://api.datamuse.com/words?${searchType}=${word}`);
     return res.json();
 

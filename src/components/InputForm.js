@@ -26,7 +26,7 @@ const InputForm = () => {
     setSearchType(searchType);
     searchWordDisplay = word;
     setWord('');
-    // setSearch('');
+    setSearch('');
   }
 
   // function handleChange(e) {
@@ -43,30 +43,29 @@ const InputForm = () => {
     <>
       <form onSubmit={handleSubmit}>
         <span id="input-span">
-
-        <h1 className="input-header">Show me words that...</h1>
-        <select
-          className="select-css"
-          name="choose search type"
-          value={search}
+          <h1 className="input-header">Show me words that...</h1>
+          <select
+            className="select-css"
+            name="choose search type"
+            value={searchType}
             onChange={event => setSearchType(event.target.value)}
-        >
-          <option value="" >Choose Search Type</option>
-          <option value="ml">have similar meaning to:</option>
-          <option value="rel_ant">have opposite meaning to:</option>
-          <option value="sl">sound similar to:</option>
-          <option value="rel_rhy">rhymes with:</option>
-          <option value="rel_jjb">are adjectives related to:</option>
-          <option value="rel_jja">are nouns related to:</option>
-        </select>
-        <input
-          type="text"
-          placeholder="Enter Word"
-          autoFocus
-          value={word}
-          onChange={(e) => setWord(e.target.value)}
-          required
-        />
+          >
+            <option value="" defaultValue>Choose Search Type</option>
+            <option value="ml">have similar meaning to:</option>
+            <option value="rel_ant">have opposite meaning to:</option>
+            <option value="sl">sound similar to:</option>
+            <option value="rel_rhy">rhymes with:</option>
+            <option value="rel_jjb">are adjectives related to:</option>
+            <option value="rel_jja">are nouns related to:</option>
+          </select>
+          <input
+            type="text"
+            placeholder="Enter Word"
+            autoFocus
+            value={word}
+            onChange={(e) => setWord(e.target.value)}
+            required
+          />
         </span>
         <button type="submit" name="submit" value="Submit" >Submit</button>
         {/* <input type="submit" name="submit" value="Submit" /> */}

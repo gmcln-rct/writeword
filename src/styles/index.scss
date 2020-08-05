@@ -73,6 +73,7 @@ form {
   align-items: center;
 
   padding: 2vmin 0;
+
   background-color: rgbA(119, 119, 119, 0.7);
   -webkit-box-shadow: inset 0px -10px 36px -32px rgba(0,0,0,1);
   -moz-box-shadow: inset 0px -10px 36px -32px rgba(0,0,0,1);
@@ -80,9 +81,10 @@ form {
 
   h1 {
     margin: 0 1vmin 0 0;
-    font-size: calc(18px + (32 - 18) * ((100vw - 300px) / (1800 - 300)));
-    line-height: calc(22px + (36 - 22) * ((100vw - 300px) / (1800 - 300)));
+    font-size: calc(24px + (32 - 24) * ((100vw - 300px) / (1800 - 300)));
+    line-height: calc(28px + (36 - 28) * ((100vw - 300px) / (1800 - 300)));
     font-weight: 700;
+    vertical-align: middle;
     color: #ffffff;
   }
 
@@ -150,17 +152,19 @@ form {
   }
 
       .select-css {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         max-width: 90%;
         margin: 2vmin 1vmin;
-        padding: 1vmin 0vmin 1vmin 2vmin;
+        padding: 1vmin 5vmin 1vmin 2vmin;
 
         color: #084769;
         background-color: #084769;
 
         font-size: calc(18px + (24 - 18) * ((100vw - 300px) / (1800 - 300)));
         font-weight: 700;
-        text-align: center;
-
+        // text-align: center;
 
         box-sizing: border-box;
         box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
@@ -183,6 +187,7 @@ form {
 
         &option {
           font-weight:normal;
+          text-align: center;
         }
 
         &:hover {
@@ -333,7 +338,7 @@ footer {
     }
 
     .select-css {
-      padding: 1vmin 4vmin;
+      padding: 2vmin 8vmin;
     }
 
   }
