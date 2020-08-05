@@ -26,18 +26,18 @@ const InputForm = () => {
     setSearchType(searchType);
     searchWordDisplay = word;
     setWord('');
-    setSearch('');
+    // setSearch('');
   }
 
-  function handleChange(e) {
-    setSearchType(e.target.value);
-    let idx = e.target.selectedIndex;
-    // searchType = e.target.options[idx].value;
+  // function handleChange(e) {
+  //   setSearchType(e.target.value);
+  //   let idx = e.target.selectedIndex;
+  //   searchType = e.target.options[idx].value;
 
-    return (
-      <div>Just a return value</div>
-    )
-  };
+  //   return (
+  //     <div>Just a return value</div>
+  //   )
+  // };
 
   return (
     <>
@@ -49,9 +49,9 @@ const InputForm = () => {
           className="select-css"
           name="choose search type"
           value={search}
-          onChange={handleChange}
+            onChange={event => setSearchType(event.target.value)}
         >
-          <option value="" defaultValue>Choose Search Type</option>
+          <option value="" >Choose Search Type</option>
           <option value="ml">have similar meaning to:</option>
           <option value="rel_ant">have opposite meaning to:</option>
           <option value="sl">sound similar to:</option>
