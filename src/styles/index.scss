@@ -296,6 +296,10 @@ footer {
   font-size: calc(18px + (24 - 18) * ((100vw - 300px) / (1800 - 300)));
   line-height: calc(22px + (28 - 22) * ((100vw - 300px) / (1800 - 300)));
   text-align: center;
+
+  p {
+    margin: 1vmin 0;
+  }
 }
 
 //   ______   ___     ___      .______   ___   ___ 

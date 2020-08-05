@@ -1,10 +1,12 @@
 import React, { useContext } from 'react';
 
 const Footer = () => {
-
+    var day = new Date();
+    var year = day.getFullYear();
     return (
         <footer>
-            Data Source: <a href="https://www.datamuse.com/api/" target="_blank" rel="noopener noreferrer">Datamuse API</a>
+            <p>Data Source: <a href="https://www.datamuse.com/api/" target="_blank" rel="noopener noreferrer">Datamuse API</a></p>
+            <p>©{year} Glenn McClanan</p>
         </footer>
     );
 }

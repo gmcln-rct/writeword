@@ -72,7 +72,7 @@ const InputForm = () => {
       </form>
       <h2 id="search-word">
         Search Term: <span id="yellow-text">{(!searchWord) ? "" : searchWord}</span> </h2>
-        <h2 id="search-word">Search Type: <span id="searchtype-text">{SearchTypeReference[searchType]}</span> 
+      <h2 id="search-word">Search Type: <span id="searchtype-text">{searchType === "" ? "similar meaning to" : SearchTypeReference[searchType]}</span> 
       </h2>
     </>
   );
