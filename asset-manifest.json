@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/gmcln-rct.github.io/writeword/static/css/main.2a4aac4c.chunk.css",
-    "main.js": "/gmcln-rct.github.io/writeword/static/js/main.d3698f3e.chunk.js",
-    "main.js.map": "/gmcln-rct.github.io/writeword/static/js/main.d3698f3e.chunk.js.map",
-    "runtime-main.js": "/gmcln-rct.github.io/writeword/static/js/runtime-main.e787f67b.js",
-    "runtime-main.js.map": "/gmcln-rct.github.io/writeword/static/js/runtime-main.e787f67b.js.map",
-    "static/js/2.e2dc50eb.chunk.js": "/gmcln-rct.github.io/writeword/static/js/2.e2dc50eb.chunk.js",
-    "static/js/2.e2dc50eb.chunk.js.map": "/gmcln-rct.github.io/writeword/static/js/2.e2dc50eb.chunk.js.map",
-    "index.html": "/gmcln-rct.github.io/writeword/index.html",
-    "precache-manifest.22aebd307cf7d097ce02294bb1b34473.js": "/gmcln-rct.github.io/writeword/precache-manifest.22aebd307cf7d097ce02294bb1b34473.js",
-    "service-worker.js": "/gmcln-rct.github.io/writeword/service-worker.js",
-    "static/css/main.2a4aac4c.chunk.css.map": "/gmcln-rct.github.io/writeword/static/css/main.2a4aac4c.chunk.css.map",
-    "static/js/2.e2dc50eb.chunk.js.LICENSE.txt": "/gmcln-rct.github.io/writeword/static/js/2.e2dc50eb.chunk.js.LICENSE.txt"
+    "main.css": "/writeword.site/static/css/main.d01d42dd.chunk.css",
+    "main.js": "/writeword.site/static/js/main.07027e7e.chunk.js",
+    "main.js.map": "/writeword.site/static/js/main.07027e7e.chunk.js.map",
+    "runtime-main.js": "/writeword.site/static/js/runtime-main.2e51832f.js",
+    "runtime-main.js.map": "/writeword.site/static/js/runtime-main.2e51832f.js.map",
+    "static/js/2.e2dc50eb.chunk.js": "/writeword.site/static/js/2.e2dc50eb.chunk.js",
+    "static/js/2.e2dc50eb.chunk.js.map": "/writeword.site/static/js/2.e2dc50eb.chunk.js.map",
+    "index.html": "/writeword.site/index.html",
+    "precache-manifest.364e322b9570d200ec109ae73832a6f9.js": "/writeword.site/precache-manifest.364e322b9570d200ec109ae73832a6f9.js",
+    "service-worker.js": "/writeword.site/service-worker.js",
+    "static/css/main.d01d42dd.chunk.css.map": "/writeword.site/static/css/main.d01d42dd.chunk.css.map",
+    "static/js/2.e2dc50eb.chunk.js.LICENSE.txt": "/writeword.site/static/js/2.e2dc50eb.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.e787f67b.js",
+    "static/js/runtime-main.2e51832f.js",
     "static/js/2.e2dc50eb.chunk.js",
-    "static/css/main.2a4aac4c.chunk.css",
-    "static/js/main.d3698f3e.chunk.js"
+    "static/css/main.d01d42dd.chunk.css",
+    "static/js/main.07027e7e.chunk.js"
   ]
 }
