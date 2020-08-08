@@ -70,10 +70,13 @@ const InputForm = () => {
         <button type="submit" name="submit" value="Submit" >Submit</button>
         {/* <input type="submit" name="submit" value="Submit" /> */}
       </form>
-      <h2 id="search-word">
-        Search Term: <span id="yellow-text">{(!searchWord) ? "" : searchWord}</span> </h2>
-      <h2 id="search-word">Search Type: <span id="searchtype-text">{searchType === "" ? "similar meaning to" : SearchTypeReference[searchType]}</span> 
-      </h2>
+      <div className="search-info">
+        <div id="search-word">Search Term: <span id="yellow-text">{(!searchWord) ? "" : searchWord}</span> </div>
+        <div id="search-word"> | </div>
+        <div id="search-word">Search Type: <span id="searchtype-text">{searchType === "" ? "similar meaning to" : SearchTypeReference[searchType]}</span> 
+        </div>
+      </div>
+
     </>
   );
 }

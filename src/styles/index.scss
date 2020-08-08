@@ -72,7 +72,7 @@ form {
   justify-content: center;
   align-items: center;
 
-  padding: 2vmin 0;
+  padding: 2vmin 0 3vmin 0;
 
   background-color: rgbA(119, 119, 119, 0.7);
   -webkit-box-shadow: inset 0px -10px 36px -32px rgba(0,0,0,1);
@@ -107,16 +107,15 @@ form {
       padding: 1vmin 0vmin;
       box-sizing: border-box;
 
-      font-weight: 600;
+      font-weight: 700;
       color: #fff;
       background: $inputtext;
-      border: 1px solid white;
+      // border: 1px solid white;
       // border-radius: 5px;
       overflow: hidden;
 
       &::placeholder {
         color: white;
-
       }
     }
 
@@ -146,6 +145,7 @@ form {
         color: #fff;
         background: $buttonhover;
         border: 2px solid #fff;
+        transform: scale(1.1);
         transition: 0.4s;
       }
   }
@@ -217,9 +217,20 @@ form {
   padding: 0 4vmin;
 }
 
+.search-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+    padding: 2vmin 0 1vmin 0;
+
+  // width: 100vw;
+    border-bottom: 1px solid #fff;
+}
+
 #search-word {
   margin: 0 0 1vmin 0;
-  padding: 1vmin 0;
+
 
   font-size: calc(20px + (32 - 20) * ((100vw - 300px) / (1800 - 300)));
   line-height: calc(24px + (36 - 24) * ((100vw - 300px) / (1800 - 300)));
@@ -228,7 +239,7 @@ form {
 
   color: #fff;
   // border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
+
 }
 
 .card {
@@ -261,7 +272,6 @@ form {
 
 
 p, h3 {
-
   text-align: center;
 }
 
@@ -280,7 +290,7 @@ p, h3 {
 
 #status-message {
   height: 100vh;
-  color: rgb(160, 247, 160);
+  color: $button;
 }
 
 .empty-div {
@@ -288,7 +298,6 @@ p, h3 {
 }
 
 footer {
-
   margin: 4vmin 0;
   color: rgb(26, 22, 85);
 
@@ -313,8 +322,6 @@ footer {
 
 @media only screen and (max-width: 820px) {
   form {
-
-
     padding: 1vmin 0;
 
     #input-span {
@@ -335,9 +342,6 @@ footer {
     button {
       margin: 3vmin 0 2vmin 0;
       padding: 1vmin 12vmin;
-
-      color: #fff;
-      background: $darkblue;
     }
 
     .select-css {
