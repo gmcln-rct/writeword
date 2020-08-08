@@ -222,15 +222,15 @@ form {
   justify-content: center;
   align-items: center;
 
-    padding: 2vmin 0 1vmin 0;
+  padding: 2vmin 0 1vmin 0;
 
   // width: 100vw;
+    background: rgba(50,50,50,0.8);
+    border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
 }
 
-#search-word {
-  margin: 0 0 1vmin 0;
-
+#search-term-break, #search-word {
 
   font-size: calc(20px + (32 - 20) * ((100vw - 300px) / (1800 - 300)));
   line-height: calc(24px + (36 - 24) * ((100vw - 300px) / (1800 - 300)));
@@ -238,8 +238,14 @@ form {
   text-align: center;
 
   color: #fff;
-  // border-top: 1px solid #fff;
+}
 
+#search-term-break {
+  margin: 0 2vmin 1vmin 1vmin;
+}
+
+#search-word {
+  margin: 0 0 1vmin 0;
 }
 
 .card {
