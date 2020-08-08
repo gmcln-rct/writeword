@@ -365,11 +365,17 @@ footer {
       margin: 5vmin 0 0 0;
   }
 
+  .search-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #search-term-break {
+    display: none;
+  }
 
   #search-word {
-
-    padding: 4vmin 0;
-
+    padding: 1vmin 0;
   }
 
 
