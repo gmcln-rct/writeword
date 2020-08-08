@@ -109,7 +109,7 @@ form {
 
       font-weight: 600;
       color: #fff;
-      background: rgba(5, 5, 5, 0.8);
+      background: $inputtext;
       border: 1px solid white;
       // border-radius: 5px;
       overflow: hidden;
@@ -125,15 +125,14 @@ form {
   button {
       display: block;
       margin: 1vmin 0 0 0;
-      padding: 1vmin 6vmin;
+      padding: 1.5vmin 6vmin;
 
-      font-size: calc(18px + (28 - 18) * ((100vw - 300px) / (1800 - 300)));
+      font-size: calc(24px + (28 - 24) * ((100vw - 300px) / (1800 - 300)));
       line-height: calc(24px + (28 - 24) * ((100vw - 300px) / (1800 - 300)));
       font-weight: 700;
       color: #fff;
-      background: $darkblue;
+      background: $button;
 
-      
       border: 2px solid #fff;
       border-radius: 10px;
 
@@ -144,9 +143,9 @@ form {
       transition: 0.4s;
 
       &:hover {
-        color: $darkblue;
-        background: #fff;
-        border: 2px solid $darkblue;
+        color: #fff;
+        background: $buttonhover;
+        border: 2px solid #fff;
         transition: 0.4s;
       }
   }
