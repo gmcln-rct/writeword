@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/gmcln-rct.github.io/writeword/static/css/main.800f60b2.chunk.css",
-    "main.js": "/gmcln-rct.github.io/writeword/static/js/main.07027e7e.chunk.js",
-    "main.js.map": "/gmcln-rct.github.io/writeword/static/js/main.07027e7e.chunk.js.map",
-    "runtime-main.js": "/gmcln-rct.github.io/writeword/static/js/runtime-main.e787f67b.js",
-    "runtime-main.js.map": "/gmcln-rct.github.io/writeword/static/js/runtime-main.e787f67b.js.map",
-    "static/js/2.e2dc50eb.chunk.js": "/gmcln-rct.github.io/writeword/static/js/2.e2dc50eb.chunk.js",
-    "static/js/2.e2dc50eb.chunk.js.map": "/gmcln-rct.github.io/writeword/static/js/2.e2dc50eb.chunk.js.map",
-    "index.html": "/gmcln-rct.github.io/writeword/index.html",
-    "precache-manifest.41b626ed4296e8801e5a7ec30127cd9c.js": "/gmcln-rct.github.io/writeword/precache-manifest.41b626ed4296e8801e5a7ec30127cd9c.js",
-    "service-worker.js": "/gmcln-rct.github.io/writeword/service-worker.js",
-    "static/css/main.800f60b2.chunk.css.map": "/gmcln-rct.github.io/writeword/static/css/main.800f60b2.chunk.css.map",
-    "static/js/2.e2dc50eb.chunk.js.LICENSE.txt": "/gmcln-rct.github.io/writeword/static/js/2.e2dc50eb.chunk.js.LICENSE.txt"
+    "main.css": "/www.writeword.site/static/css/main.2a11bed9.chunk.css",
+    "main.js": "/www.writeword.site/static/js/main.f8e249db.chunk.js",
+    "main.js.map": "/www.writeword.site/static/js/main.f8e249db.chunk.js.map",
+    "runtime-main.js": "/www.writeword.site/static/js/runtime-main.60b77112.js",
+    "runtime-main.js.map": "/www.writeword.site/static/js/runtime-main.60b77112.js.map",
+    "static/js/2.e2dc50eb.chunk.js": "/www.writeword.site/static/js/2.e2dc50eb.chunk.js",
+    "static/js/2.e2dc50eb.chunk.js.map": "/www.writeword.site/static/js/2.e2dc50eb.chunk.js.map",
+    "index.html": "/www.writeword.site/index.html",
+    "precache-manifest.1028c8ce2352f3216c8085ef95212f40.js": "/www.writeword.site/precache-manifest.1028c8ce2352f3216c8085ef95212f40.js",
+    "service-worker.js": "/www.writeword.site/service-worker.js",
+    "static/css/main.2a11bed9.chunk.css.map": "/www.writeword.site/static/css/main.2a11bed9.chunk.css.map",
+    "static/js/2.e2dc50eb.chunk.js.LICENSE.txt": "/www.writeword.site/static/js/2.e2dc50eb.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.e787f67b.js",
+    "static/js/runtime-main.60b77112.js",
     "static/js/2.e2dc50eb.chunk.js",
-    "static/css/main.800f60b2.chunk.css",
-    "static/js/main.07027e7e.chunk.js"
+    "static/css/main.2a11bed9.chunk.css",
+    "static/js/main.f8e249db.chunk.js"
   ]
 }
