@@ -232,8 +232,8 @@ form {
 
 #search-term-break, #search-word {
 
-  font-size: calc(20px + (32 - 20) * ((100vw - 300px) / (1800 - 300)));
-  line-height: calc(24px + (36 - 24) * ((100vw - 300px) / (1800 - 300)));
+  font-size: calc(20px + (28 - 20) * ((100vw - 300px) / (1800 - 300)));
+  line-height: calc(24px + (28 - 24) * ((100vw - 300px) / (1800 - 300)));
   font-weight: 600;
   text-align: center;
 
@@ -324,11 +324,10 @@ footer {
 //   /_/     |____|  \___/     | _|      /__/ \__\ 
 //                                                 
 //                                                 
-              
 
 @media only screen and (max-width: 820px) {
   form {
-    padding: 1vmin 0;
+    padding: 2vmin 0;
 
     #input-span {
       display: flex;
@@ -343,6 +342,10 @@ footer {
 
     input  {
       margin: 1vmin 0vmin;
+
+      &[type='text']{
+        padding: 2vmin 2vmin;
+      }
     }
 
     button {
