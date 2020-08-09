@@ -326,8 +326,14 @@ footer {
 //                                                 
 
 @media only screen and (max-width: 820px) {
+
+  nav {
+    height: 40px;
+    padding: 6vmin 0 4vmin 0;
+  }
+
   form {
-    padding: 2vmin 0;
+    padding: 4vmin 0;
 
     #input-span {
       display: flex;
@@ -341,7 +347,7 @@ footer {
     }
 
     input  {
-      margin: 1vmin 0vmin;
+      margin: 2vmin 0vmin;
 
       &[type='text']{
         padding: 2vmin 2vmin;
@@ -350,7 +356,7 @@ footer {
 
     button {
       margin: 3vmin 0 2vmin 0;
-      padding: 1vmin 12vmin;
+      padding: 2vmin 12vmin;
     }
 
     .select-css {
@@ -359,10 +365,6 @@ footer {
 
   }
 
-  nav {
-    height: 40px;
-    padding: 6vmin 0 4vmin 0;
-  }
 
   .content {
       margin: 5vmin 0 0 0;
