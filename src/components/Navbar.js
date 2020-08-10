@@ -7,8 +7,10 @@ import { ReactComponent as Facebook } from "../images/fb.svg";
 const Navbar = () => {
 
     return (
-      <nav role="navigation">
-        <span>The Write Word</span>
+      <>
+        <nav role="navigation">
+          <span>The Write Word</span>
+        </nav>
         <span id="social-share">
           <a
             href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwriteword.site%2F"
@@ -34,7 +36,7 @@ const Navbar = () => {
             />
           </a>
         </span>
-      </nav>
+      </>
     );
 }
  

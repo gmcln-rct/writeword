@@ -42,7 +42,6 @@ code {
 }
 
 nav {
-
   // width: 100vw;
   height: 50px;
   // margin: 1vmin 0;
@@ -63,30 +62,31 @@ nav {
   box-shadow: inset 0px -5px 15px 3px rgba(85,85,85,0.2);
 
   border-bottom: 1px solid #555;
+
   
-  #social-share {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
+}
 
-      position: fixed;
-      width: 200px;
-      top: 20px;
-      right: 2rem;
+#social-share {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 
-      cursor: pointer;
+    position: fixed;
+    width: 200px;
+    top: 20px;
+    right: 20px;
 
-      z-index: 3;
+    cursor: pointer;
 
-      #share-icon {
-        width: 40px;
-        height: 40px;
-        padding: 0 1vmin;
+    z-index: 3;
 
-        opacity: 0.5;
-      }
-  }
+    #share-icon {
+      width: 40px;
+      height: 40px;
+      padding: 0 1vmin;
 
+      opacity: 0.5;
+    }
 }
 
 // FORM
@@ -341,6 +341,7 @@ footer {
     margin: 1vmin 0;
   }
 }
+// ++++++++++++++++++++++++++++++++++++++++++++++++++
 
 //   ______   ___     ___      .______   ___   ___ 
 //  |____  | |__ \   / _ \     |   _  \  \  \ /  / 
@@ -356,6 +357,18 @@ footer {
   nav {
     height: 40px;
     padding: 6vmin 0 4vmin 0;
+
+  }
+  
+  #social-share {
+    top: 90%;
+    left: 50%;
+
+    #share-icon {
+
+      padding: 0 2vmin;
+      opacity: 0.85;
+    }
   }
 
   form {
