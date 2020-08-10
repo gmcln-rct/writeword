@@ -4,6 +4,6 @@ The Write Word web app helps users word inspirations for your writing project wi
 
 The project was built with React, using React Query, JavaScript and SASS.
 
-Site URL: https://www.glennmcclanan.com/writeword/
+Site URL: https://writeword.site/
 
 The API source is Datamuse API: https://www.datamuse.com/api/
