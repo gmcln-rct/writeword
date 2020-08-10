@@ -1,6 +1,8 @@
 import React, {useContext} from 'react';
 
 import {ReactComponent as Twitter} from '../images/twitter.svg';
+import { ReactComponent as Facebook } from "../images/fb.svg";
+
 
 const Navbar = () => {
 
@@ -13,12 +15,11 @@ const Navbar = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
-              src="../images/fb-icon.svg"
+            <Facebook
               alt="Share on Facebook"
               id="share-icon"
               aria-label="Share on Facebook Icon"
-            />{" "}
+            />
           </a>
 
           <a
@@ -31,12 +32,6 @@ const Navbar = () => {
               id="share-icon"
               aria-label="Share on Twitter Icon"
             />
-            {/* <img
-              src={twitter}
-              alt="Share on Twitter"
-              id="share-icon"
-              aria-label="Share on Twitter Icon"
-            /> */}
           </a>
         </span>
       </nav>
