@@ -30,13 +30,13 @@ const Words = () => {
         <>
             {
                 status === 'loading' && (
-                    <div id="status-message">Data loading</div>
+                    <div id="status-message">Data loading...</div>
                 )
             }
             
             {
                 status === 'error' && (
-                    <div id="status-message"> Error loading data </div>
+                    <div id="status-message">No data loaded.</div>
                 )
             }
 

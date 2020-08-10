@@ -295,8 +295,10 @@ p, h3 {
 }
 
 #status-message {
+  visibility: hidden;
   height: 100vh;
   color: $button;
+
 }
 
 .empty-div {
