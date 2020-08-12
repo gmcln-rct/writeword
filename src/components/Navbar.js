@@ -12,7 +12,6 @@ const Navbar = () => {
           <span>The Write Word</span>
         </nav>
         <span id="social-share">
-          <p>share</p>
           <a
             href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwriteword.site%2F"
             target="_blank"
