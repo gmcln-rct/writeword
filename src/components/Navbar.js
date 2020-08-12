@@ -35,6 +35,10 @@ const Navbar = () => {
               aria-label="Share on Twitter Icon"
             />
           </a>
+
+          <a href="mailto:?Subject=The Write Word&amp;Body=Thought%20you%20might%20like%20to%20find%20The%20Write%20Word!%20 https://writeword.site">
+            <img src="https://simplesharebuttons.com/images/somacro/email.png" alt="Email" />
+          </a>
         </span>
       </>
     );
