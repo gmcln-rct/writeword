@@ -76,23 +76,52 @@ nav {
     top: 30px;
     right: 10px;
 
-    cursor: pointer;
+    transition: 400ms;
 
+    cursor: pointer;
     z-index: 3;
 
+      p {
+      display: block;
+      transition: 400ms;
+    }
+
     #share-icon {
+      display: none;
       width: 40px;
       height: 40px;
       padding: 0 1vmin;
 
-      opacity: 0.5;
-
       transition: 400ms;
-
-      &:hover {
-        opacity: 0.8;
-      }
     }
+
+    &:hover {
+
+      p {
+        display: none;
+        transition: 400ms;
+      }
+      #share-icon {
+        display: block;
+        width: 40px;
+        height: 40px;
+        padding: 0 1vmin;
+        
+        opacity: 0.5;
+
+        transition: 400ms;
+
+        &:hover {
+          opacity: 0.8;
+          transform: scale(1.2);
+        }
+      }
+
+    }
+
+
+
+
 }
 
 // FORM
