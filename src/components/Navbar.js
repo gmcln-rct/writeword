@@ -2,7 +2,7 @@ import React, {useContext} from 'react';
 
 import {ReactComponent as Twitter} from '../images/twitter.svg';
 import { ReactComponent as Facebook } from "../images/fb.svg";
-
+import { ReactComponent as Email } from "../images/email.svg";
 
 const Navbar = () => {
 
@@ -37,7 +37,12 @@ const Navbar = () => {
           </a>
 
           <a href="mailto:?Subject=The Write Word&amp;Body=Thought%20you%20might%20like%20to%20find%20The%20Write%20Word!%20 https://writeword.site">
-            <img src="https://simplesharebuttons.com/images/somacro/email.png" alt="Email" />
+            <Email 
+              id="share-icon"
+              alt="Share via Email"
+            />
+
+            {/* <img src="https://simplesharebuttons.com/images/somacro/email.png" alt="Email" /> */}
           </a>
         </span>
       </>
