@@ -1,8 +1,5 @@
 import React, { useState} from 'react';
 
-import { Helmet } from "react-helmet";
-
-
 import InputForm from './components/InputForm';
 import Navbar from './components/Navbar';
 import Words from './components/Words';
