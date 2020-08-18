@@ -70,15 +70,23 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-content: flex-end;
 
     position: fixed;
     width: 200px;
     top: 30px;
-    right: 10px;
+    right: 30px;
 
     cursor: pointer;
 
     z-index: 3;
+
+    p {
+      padding: 0.5vmin 0;
+      font-size: calc(18px + (28 - 18) * ((100vw - 300px) / (1800 - 300)));
+      line-height: calc(18px + (32 - 18) * ((100vw - 300px) / (1800 - 300)));
+      font-weight: 400;
+    }
 
     #share-icon {
       width: 40px;
@@ -94,8 +102,6 @@ nav {
         transform: scale(1.2);
       }
     }
-
-
 }
 
 // FORM
@@ -368,8 +374,16 @@ footer {
   }
   
   #social-share {
-    top: 90%;
-    left: 20%;
+    top: 87%;
+    left: 18%;
+    padding: 2vmin 0;
+
+    background: rgba(10,10,10,0.6);
+    border-radius: 10px;
+
+    p {
+      display: none;
+    }
 
     #share-icon {
 
@@ -380,7 +394,7 @@ footer {
   }
 
   form {
-    padding: 4vmin 0;
+    padding: 2vmin 0 4vmin 0;
 
     #input-span {
       display: flex;
@@ -430,5 +444,8 @@ footer {
     padding: 1vmin 0;
   }
 
+  footer {
+    padding: 11vmin 0 0 0;
+  }
 
 }
