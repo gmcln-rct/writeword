@@ -70,15 +70,23 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-content: flex-end;
 
     position: fixed;
     width: 200px;
     top: 30px;
-    right: 10px;
+    right: 30px;
 
     cursor: pointer;
 
     z-index: 3;
+
+    p {
+      padding: 0.5vmin 0;
+      font-size: calc(18px + (28 - 18) * ((100vw - 300px) / (1800 - 300)));
+      line-height: calc(18px + (32 - 18) * ((100vw - 300px) / (1800 - 300)));
+      font-weight: 300;
+    }
 
     #share-icon {
       width: 40px;
@@ -94,8 +102,6 @@ nav {
         transform: scale(1.2);
       }
     }
-
-
 }
 
 // FORM

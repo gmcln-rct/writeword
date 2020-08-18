@@ -12,9 +12,11 @@ const Navbar = () => {
           <span>The Write Word</span>
         </nav>
         <span id="social-share">
+          <p alt="Share website">Share:</p>
           <a
             href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwriteword.site%2F"
             target="_blank"
+            alt="Share on Facebook"
             rel="noopener noreferrer"
           >
             <Facebook
@@ -27,6 +29,7 @@ const Navbar = () => {
           <a
             href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwriteword.site%2F"
             target="_blank"
+            alt="Share on Twitter"
             rel="noopener noreferrer"
           >
             <Twitter
@@ -36,11 +39,8 @@ const Navbar = () => {
             />
           </a>
 
-          <a href="mailto:?Subject=The Write Word&amp;Body=Thought%20you%20might%20like%20to%20find%20The%20Write%20Word!%20 https://writeword.site">
-            <Email 
-              id="share-icon"
-              alt="Share via Email"
-            />
+          <a href="mailto:?Subject=The Write Word&amp;Body=Thought%20you%20might%20like%20to%20find%20The%20Write%20Word!%20 https://writeword.site" alt="Share via Email">
+            <Email id="share-icon" alt="Share via Email" />
 
             {/* <img src="https://simplesharebuttons.com/images/somacro/email.png" alt="Email" /> */}
           </a>
