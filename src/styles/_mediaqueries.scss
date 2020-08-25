@@ -1,0 +1,105 @@
+// ++++++++++++++++++++++++++++++++++++++++++++++++++
+
+//   ______   ___     ___      .______   ___   ___ 
+//  |____  | |__ \   / _ \     |   _  \  \  \ /  / 
+//      / /     ) | | | | |    |  |_)  |  \  V  /  
+//     / /     / /  | | | |    |   ___/    >   <   
+//    / /     / /_  | |_| |    |  |       /  .  \  
+//   /_/     |____|  \___/     | _|      /__/ \__\ 
+//                                                 
+//                                                 
+
+@media only screen and (max-width: 820px) {
+
+  nav {
+    height: 40px;
+    padding: 6vmin 0 4vmin 0;
+
+  }
+  
+  #social-share {
+    top: 87%;
+    left: 18%;
+    padding: 2vmin 0;
+
+    background: rgba(10,10,10,0.6);
+    border-radius: 10px;
+
+    p {
+      display: none;
+    }
+
+    #share-icon {
+
+      padding: 0 2vmin;
+      opacity: 0.85;
+      fill: #fff;
+    }
+  }
+
+  form {
+    padding: 2vmin 0 4vmin 0;
+
+    #input-span {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h1 {
+      margin: 2vmin 0 0 0;
+    }
+
+    input  {
+      margin: 2vmin 0vmin;
+
+      &[type='text']{
+        padding: 2vmin 2vmin;
+      }
+    }
+
+    button {
+      margin: 3vmin 0 2vmin 0;
+      padding: 2vmin 12vmin;
+    }
+
+    .select-css {
+      padding: 2vmin 8vmin;
+    }
+
+  }
+
+  
+
+
+  .content {
+      margin: 5vmin 0 0 0;
+  }
+
+  .search-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #search-term-break {
+    display: none;
+  }
+
+  #search-word {
+    padding: 1vmin 0;
+  }
+
+  footer {
+    padding: 11vmin 0 0 0;
+  }
+
+}
+
+details#info-box {
+    padding: 0.5vmin 2vmin;
+
+    p {
+      margin: 1vmin 0!important;
+    }
+}
