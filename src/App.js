@@ -1,6 +1,7 @@
 import React, { useState} from 'react';
 import InputForm from './components/InputForm';
 import Navbar from './components/Navbar';
+import InfoBox from './components/InfoBox';
 import Words from './components/Words';
 import Footer from './components/Footer';
 import { ReactQueryDevtools } from "react-query-devtools";
@@ -15,6 +16,7 @@ function App() {
       <WordContextProvider>
         <Navbar />
         <InputForm />
+        <InfoBox />
         <main className="content">
           <Words />
         </main>
