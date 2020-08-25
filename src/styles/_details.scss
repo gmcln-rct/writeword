@@ -1,0 +1,19 @@
+
+
+details#info-box {
+    margin: 1vmin 0;
+    padding: 1vmin 2vmin;
+    color: white;
+    text-align: center;
+
+    summary {
+        font-size: calc(20px + (24 - 20) * ((100vw - 300px) / (1800 - 300)));
+        line-height: calc(28px + (28 - 28) * ((100vw - 300px) / (1800 - 300)));
+    }
+
+    p {  
+        font-size: calc(16px + (20 - 16) * ((100vw - 300px) / (1800 - 300)));
+        line-height: calc(20px + (28 - 20) * ((100vw - 300px) / (1800 - 300)));
+    }
+  }
+

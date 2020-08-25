@@ -4,6 +4,7 @@
 
 @import 'variables';
 @import 'form';
+@import 'details';
 
 html {
   padding: 0;
@@ -151,15 +152,6 @@ nav {
   margin: 0 0 1vmin 0;
 }
 
-details#info-box {
-    margin: 1vmin 0;
-    color: white;
-    text-align: center;
-
-    summary {
-      
-    }
-  }
 
 .card {
   min-width: 150px;
