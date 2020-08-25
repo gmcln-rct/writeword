@@ -3,9 +3,10 @@ import React, { useContext } from "react";
 const InfoBox = () => {
     return ( 
         <>
-            <details>
-                <summary>Epcot Center</summary>
-                <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+            <details id="info-box">
+                <summary>What is The Write Word?</summary>
+                <p>The Write Word is a thesaurus tool that helps writers find word inspiration with synonyms, antonyms, rhymes, related words and more.</p>
+                <p>Developed by Glenn McClanan using the Datamuse API.</p>
             </details>
         </>
      );
