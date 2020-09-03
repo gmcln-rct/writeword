@@ -48,6 +48,7 @@ const InputForm = () => {
             className="select-css"
             name="choose search type"
             value={searchType}
+            aria-label="search types"
             onChange={event => setSearchType(event.target.value)}
           >
             <option value="" defaultValue>Choose Search Type</option>
@@ -63,6 +64,7 @@ const InputForm = () => {
             placeholder="Enter Word"
             autoFocus
             value={word}
+            aria-label="search word"
             onChange={(e) => setWord(e.target.value)}
             required
           />

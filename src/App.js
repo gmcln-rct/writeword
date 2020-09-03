@@ -14,9 +14,11 @@ function App() {
   return (
     <div className="App">
       <WordContextProvider>
-        <Navbar />
-        <InfoBox />
-        <InputForm />
+        <header>
+          <Navbar />
+          <InfoBox />
+          <InputForm />
+        </header>
 
         <main className="content">
           <Words />
