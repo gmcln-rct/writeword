@@ -69,7 +69,7 @@ const InputForm = () => {
             required
           />
         </span>
-        <button type="submit" name="submit" value="Submit" >Submit</button>
+        <button type="submit" name="submit" value="Submit" aria-label="Submit">Submit</button>
         {/* <input type="submit" name="submit" value="Submit" /> */}
       </form>
       <div className="search-info">
