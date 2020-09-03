@@ -17,6 +17,7 @@ const Navbar = () => {
           target="_blank"
           alt="Share on Facebook"
           rel="noopener noreferrer"
+          aria-label="share on facebook"
         >
           <Facebook
             alt="Share on Facebook"
@@ -30,6 +31,7 @@ const Navbar = () => {
           target="_blank"
           alt="Share on Twitter"
           rel="noopener noreferrer"
+          aria-label="share on twitter"
         >
           <Twitter
             alt="Share on Twitter"
@@ -41,6 +43,7 @@ const Navbar = () => {
         <a
           href="mailto:?Subject=The Write Word&amp;Body=Thought%20you%20might%20like%20to%20find%20The%20Write%20Word!%20 https://writeword.site"
           alt="Share via Email"
+          aria-label="share via email"
         >
           <Email id="share-icon" alt="Share via Email" />
 
