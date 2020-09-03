@@ -103,7 +103,7 @@ code {
   border-radius: 10px;
   border: 1px solid #fff;
 
-  h3 {
+  h2 {
     margin: 0 0 1vmin 0;
     // color: white;
     font-size: calc(18px + (24 - 18) * ((100vw - 300px) / (1800 - 300)));
@@ -121,7 +121,7 @@ code {
   }
 }
 
-p, h3 {
+p, h2 {
   text-align: center;
 }
 

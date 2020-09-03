@@ -32,7 +32,7 @@ const Word = ({ word, score, tag }) => {
 
     return (
       <div className="card" style={{ background: `rgba(${rgb},0.9)`, color: `rgb(${fontcolor})` }}>
-        <h3>{word}</h3>
+        <h2>{word}</h2>
         <p>Relevance: {percentage}%</p>
         {/* <p>{percentage}</p> */}
         {/* <p>Tag = {tag}</p> */}
