@@ -5,13 +5,13 @@ The Write Word web app helps users find word inspirations for your writing proje
 
 The app is single purpose, intended to show related words, not provide definitions, pronunciations, etc.
 
-Developed by Glenn McClanan, a Front End Developer in New York City.
+Developed by Glenn McClanan, a Front End Developer & UI Designer in New York City.
 
 
 ## Technologies:
 React
 React Context API
-Reqct Query
+React Query
 SASS
 JavaScript
 
